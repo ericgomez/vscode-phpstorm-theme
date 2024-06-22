@@ -1,0 +1,44 @@
+{
+  "name": "phpstorm-theme",
+  "displayName": "PhpStorm Dark Theme",
+  "description": "Dark Theme - PhpStorm Edition",
+  "icon": "./images/icon.png",
+  "publisher": "ericgomez",
+  "galleryBanner": {
+    "color": "#1e1f22",
+    "theme": "dark"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "jetbrains",
+    "intellij",
+    "new dark",
+    "phpstorm"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "PhpStorm Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-theme.json"
+      }
+    ]
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericgomez/vscode-phpstorm-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericgomez/vscode-phpstorm-theme/issues",
+    "email": "eric.gomez.sanchez@gmail.com"
+  }
+}
