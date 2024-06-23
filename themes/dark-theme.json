@@ -258,7 +258,7 @@
       "foreground": "#BCBEC3E9"
     },
     "variable": {
-      "foreground": "#B375B4"
+      "foreground": "#BCBEC3E9"
     },
     "variable.defaultLibrary": {
       "foreground": "#B375B4",
@@ -770,6 +770,20 @@
       "settings": {
         "foreground": "#B375B4",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
+        "variable.other.readwrite.alias.ts",
+        "variable.other.readwrite.alias.js",
+        "variable.other.readwrite.ts",
+        "variable.other.property.ts",
+        "variable.other.readwrite.js",
+        "variable.other.object.ts",
+        "variable.other.property.js"
+      ],
+      "settings": {
+        "foreground": "#BCBEC3E9"
       }
     },
     {
