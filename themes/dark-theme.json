@@ -71,7 +71,7 @@
     "panelTitle.activeForeground": "#dfe1e5",
     "panelTitle.inactiveForeground": "#9ea0a8",
     "terminal.background": "#1e1f22",
-    "terminal.foreground": "#bcbec3",
+    "terminal.foreground": "#bcbec3ee",
     "terminal.border": "#2b2d30",
     "dropdown.border": "#4f5156",
     "dropdown.background": "#393b40",
@@ -139,7 +139,7 @@
     "scrollbarSlider.hoverBackground": "#535455a6",
     "debugIcon.breakpointForeground": "#db5c5c",
     "editor.background": "#1e1f22",
-    "editor.foreground": "#bcbec3",
+    "editor.foreground": "#bcbec3ee",
     "editor.foldBackground": "#7b7f8a4d",
     "editorBracketMatch.background": "#42454a",
     "editorBracketMatch.border": "#42454a",
@@ -214,7 +214,7 @@
     "peekViewEditor.matchHighlightBackground": "#2d543f",
     "peekViewResult.background": "#2b2d30",
     "peekViewResult.fileForeground": "#dfe1e5",
-    "peekViewResult.lineForeground": "#bcbec3",
+    "peekViewResult.lineForeground": "#bcbec3ee",
     "peekViewResult.matchHighlightBackground": "#124957",
     "peekViewResult.selectionBackground": "#2e436e",
     "peekViewResult.selectionForeground": "#dfe1e5",
@@ -265,25 +265,25 @@
       "fontStyle": "italic"
     },
     "parameter": {
-      "foreground": "#bcbec3"
+      "foreground": "#bcbec3ee"
     },
     "typeParameter": {
       "foreground": "#507874"
     },
     "type": {
-      "foreground": "#bcbec3"
+      "foreground": "#bcbec3ee"
     },
     "type.defaultLibrary": {
       "fontStyle": "italic"
     },
     "interface": {
-      "foreground": "#bcbec3"
+      "foreground": "#bcbec3ee"
     },
     "interface.defaultLibrary": {
       "fontStyle": "italic"
     },
     "class": {
-      "foreground": "#bcbec3"
+      "foreground": "#bcbec3ee"
     },
     "class.defaultLibrary": {
       "foreground": "#B375B4",
@@ -433,7 +433,7 @@
         "meta.tag.attributes keyword.operator.assignment"
       ],
       "settings": {
-        "foreground": "#6aab73"
+        "foreground": "#6aab73ee"
       }
     },
     {
@@ -486,7 +486,7 @@
         "storage.type.function.arrow"
       ],
       "settings": {
-        "foreground": "#bcbec3"
+        "foreground": "#bcbec3ee"
       }
     },
     {

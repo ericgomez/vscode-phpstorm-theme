@@ -18,6 +18,15 @@
 4. Click **Install** to install it.
 5. Click **Reload** to reload your editor.
 
+### Optional Customization
+
+To further enhance your experience with the **PhpStorm Dark Theme**, we recommend installing the following extensions:
+
+* **Icon Theme**: Enhance the visual consistency of your editor with the [JetBrains Icon Theme](https://marketplace.visualstudio.com/items?itemName=chadalen.vscode-jetbrains-icon-theme), which provides a set of icons inspired by JetBrains.
+* **Breakpoint Highlighting**: Make breakpoints stand out more effectively with [Breakpoint Highlight](https://marketplace.visualstudio.com/items?itemName=ericgomez.breakpoint-highlight), improving your debugging workflow.
+
+These optional adjustments will help recreate a development experience more akin to JetBrains PhpStorm within Visual Studio Code.
+
 ### Feedback
 
 Your feedback is invaluable! If you encounter any issues or have suggestions for improvements, please [report them](https://github.com/ericgomez/vscode-phpstorm-theme/issues) here.
