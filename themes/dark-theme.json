@@ -151,7 +151,7 @@
     "editorIndentGuide.background1": "#323438",
     "editorLineNumber.activeForeground": "#9ea0a8",
     "editorLineNumber.foreground": "#4b5059",
-    "editorUnnecessaryCode.opacity": "#00000066",
+    "editorUnnecessaryCode.opacity": "#000000AA",
     "editorInlayHint.foreground": "#868a90",
     "editorInlayHint.typeBackground": "#2d2e3200",
     "editorInlayHint.parameterBackground": "#2d2e32",
