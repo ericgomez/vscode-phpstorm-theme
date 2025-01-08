@@ -251,17 +251,20 @@
   "semanticHighlighting": true,
   "semanticTokenColors": {
     "namespace": {
-      "foreground": "#B375B4",
+      "foreground": "#B375B4FE",
       "fontStyle": "italic"
     },
     "keyword": {
       "foreground": "#BCBEC3E9"
     },
     "variable": {
+      "foreground": "#B375B4FE"
+    },
+    "variable.local": {
       "foreground": "#BCBEC3E9"
     },
     "variable.defaultLibrary": {
-      "foreground": "#B375B4",
+      "foreground": "#B375B4FE",
       "fontStyle": "italic"
     },
     "parameter": {
@@ -286,14 +289,14 @@
       "foreground": "#bcbec3ee"
     },
     "class.defaultLibrary": {
-      "foreground": "#B375B4",
+      "foreground": "#55A3E5E5",
       "fontStyle": "italic"
     },
     "property": {
-      "foreground": "#B375B4"
+      "foreground": "#B375B4FE"
     },
     "property.defaultLibrary": {
-      "foreground": "#B375B4"
+      "foreground": "#B375B4FE"
     }
   },
   "tokenColors": [
@@ -389,14 +392,13 @@
         "variable.language",
         "meta.object-literal.key",
         "meta.definition.property",
-        "meta.definition.property entity.name.function",
         "support.type.property-name.json",
         "support.variable.property",
         "support.type.object.module",
         "fenced_code"
       ],
       "settings": {
-        "foreground": "#B375B4",
+        "foreground": "#B375B4FE",
         "fontStyle": ""
       }
     },
@@ -405,7 +407,7 @@
         "markup.heading"
       ],
       "settings": {
-        "foreground": "#B375B4",
+        "foreground": "#B375B4FE",
         "fontStyle": "italic"
       }
     },
@@ -462,6 +464,7 @@
         "meta.embedded",
         "meta.tag.attributes",
         "meta.at-rule.for keyword.control.operator",
+        "variable.other.object.property.js",
         "variable.interpolation",
         "entity.name.type",
         "entity.name.function.tagged-template",
@@ -715,7 +718,7 @@
         "variable.other.property.php"
       ],
       "settings": {
-        "foreground": "#B375B4"
+        "foreground": "#B375B4FE"
       }
     },
     {
@@ -768,7 +771,7 @@
         "variable.other.readwrite"
       ],
       "settings": {
-        "foreground": "#B375B4",
+        "foreground": "#B375B4FE",
         "fontStyle": "italic"
       }
     },
@@ -783,7 +786,7 @@
         "variable.other.property.js"
       ],
       "settings": {
-        "foreground": "#BCBEC3E9"
+        "foreground": "#B375B4FE"
       }
     },
     {
