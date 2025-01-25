@@ -18,6 +18,14 @@
 4. Click **Install** to install it.
 5. Click **Reload** to reload your editor.
 
+### Recommendation
+
+For a better experience, it is recommended to add the following configuration to your Visual Studio Code settings:
+
+```json
+"editor.bracketPairColorization.enabled": false
+```
+
 ### Optional Customization
 
 To further enhance your experience with the **PhpStorm Dark Theme**, we recommend installing the following extensions:
