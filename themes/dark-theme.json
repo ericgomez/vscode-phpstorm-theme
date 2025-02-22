@@ -255,7 +255,7 @@
       "fontStyle": "italic"
     },
     "keyword.defaultLibrary": {
-      "foreground": "#C69178F1"
+      "foreground": "#C69179F2"
     },
     "variable.local": {
       "foreground": "#BCBEC3E9"
@@ -265,7 +265,7 @@
       "fontStyle": "italic"
     },
     "method": {
-      "foreground": "#57AAF7E9"
+      "foreground": "#57A9E9ED"
     },
     "parameter": {
       "foreground": "#bcbec3ee"
@@ -349,7 +349,7 @@
         "punctuation.definition.quote.begin.markdown"
       ],
       "settings": {
-        "foreground": "#C69178F1",
+        "foreground": "#C69179F2",
         "fontStyle": ""
       }
     },
@@ -366,7 +366,7 @@
         "punctuation.definition.heading.markdown"
       ],
       "settings": {
-        "foreground": "#C69178F1",
+        "foreground": "#C69179F2",
         "fontStyle": "italic"
       }
     },
@@ -467,7 +467,7 @@
         "punctuation.definition.link.description.end.markdown"
       ],
       "settings": {
-        "foreground": "#57AAF7E9",
+        "foreground": "#57A9E9ED",
         "fontStyle": "underline"
       }
     },
@@ -476,7 +476,7 @@
         "markup.underline.link"
       ],
       "settings": {
-        "foreground": "#57AAF7E9",
+        "foreground": "#57A9E9ED",
         "fontStyle": "italic"
       }
     },
@@ -495,7 +495,7 @@
         "string.other.link.description.title.markdown"
       ],
       "settings": {
-        "foreground": "#57AAF7E9",
+        "foreground": "#57A9E9ED",
         "fontStyle": ""
       }
     },
@@ -557,7 +557,7 @@
         "keyword.other.new.php"
       ],
       "settings": {
-          "foreground": "#C69178F1"
+          "foreground": "#C69179F2"
       }
     },
     {
@@ -587,7 +587,7 @@
         "support.constant.ext.php",
         "meta.embedded.inline.phpx support.constant.core.php",
         "constant.other.class.php",
-        "constant.other.php"        
+        "constant.other.php"
       ],
       "settings": {
         "foreground": "#987AA1F8",
@@ -604,7 +604,7 @@
         "entity.name.function.php"
       ],
       "settings": {
-        "foreground": "#57AAF7E9"
+        "foreground": "#57A9E9ED"
       }
     },
     {
@@ -632,11 +632,9 @@
         "foreground": "#BCBEC3E9"
       }
     },
-    
-    
     {
       "scope": [
-        "meta.class.php meta.class.body.php support.other.namespace.php",
+        "meta.class.php support.other.namespace.php",
         "meta.class.php meta.class.body.php meta.method-call.php support.other.namespace.php"
       ],
       "settings": {
@@ -668,7 +666,7 @@
         "support.function.aggregate.sql"
       ],
       "settings": {
-        "foreground": "#57AAF7E9"
+        "foreground": "#57A9E9ED"
       }
     },
     {
@@ -716,7 +714,7 @@
         "constant.language.boolean.false.js"
       ],
       "settings": {
-        "foreground": "#C69178F1"
+        "foreground": "#C69179F2"
       }
     },
     {
@@ -730,7 +728,7 @@
         "entity.name.function.php"
       ],
       "settings": {
-        "foreground": "#57AAF7E9"
+        "foreground": "#57A9E9ED"
       }
     },
     {
@@ -739,7 +737,7 @@
         "meta.array.literal.js meta.objectliteral.js meta.object.member.js meta.function-call.js entity.name.function.js"
       ],
       "settings": {
-        "foreground": "#C69178F1"
+        "foreground": "#C69179F2"
       }
     },
     {
@@ -867,12 +865,15 @@
     },
     {
       "scope": [
+        "meta.attribute.php",
         "punctuation.decorator",
         "meta.decorator entity.name.function",
-        "constant.other.character-class.regexp"
+        "constant.other.character-class.regexp",
+        "meta.attribute.php support.attribute.php",
+        "meta.class.php meta.attribute.php support.other.namespace.php"
       ],
       "settings": {
-        "foreground": "#b3ae60"
+        "foreground": "#B3AE60F2"
       }
     },
     {
@@ -884,10 +885,22 @@
         "source.ts variable.other.constant.ts",
         "source.vue variable.other.readwrite.js",
         "source.vue variable.other.constant.js",
-        "source.vue variable.other.object.ts"  
+        "source.vue variable.other.object.ts",
+        "meta.attribute.php entity.name.variable.parameter.php",
+        "meta.embedded.block.php meta.attribute.php support.class.php"
       ],
       "settings": {
         "foreground": "#BCBEC3EE"
+      }
+    },
+    {
+      "scope": [
+        "meta.embedded.block.php meta.method-call.php entity.name.variable.parameter.php",
+        "meta.embedded.block.php meta.attribute.php entity.name.variable.parameter.php",
+        "meta.embedded.block.php meta.attribute.php punctuation.separator.colon.php"
+      ],
+      "settings": {
+        "foreground": "#567CDAF5"
       }
     },
     {
