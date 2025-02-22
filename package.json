@@ -8,7 +8,7 @@
     "color": "#1e1f22",
     "theme": "dark"
   },
-  "version": "0.0.9",
+  "version": "0.0.12",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -19,7 +19,6 @@
     "theme",
     "dark theme",
     "jetbrains",
-    "intellij",
     "new dark",
     "phpstorm"
   ],
