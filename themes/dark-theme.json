@@ -260,7 +260,7 @@
       "foreground": "#C69179F2"
     },
     "variable.local": {
-      "foreground": "#BCBEC3E9"
+      "foreground": "#BCBEC3EE"
     },
     "variable.defaultLibrary": {
       "foreground": "#C786BBEA",
@@ -403,6 +403,15 @@
         "constant.other.character-class.range.regexp",
         "meta.at-rule.each keyword.control.operator",
         "meta.attribute-selector",
+        "constant.language.lf.editorconfig",
+        "constant.language.tab.editorconfig",
+        "constant.language.crlf.editorconfig",
+        "constant.language.space.editorconfig",
+        "constant.language.boolean.true.editorconfig",
+        "constant.language.charset.encoding.utf-8.editorconfig",
+        "constant.numeric.decimal.integer.int.editorconfig",
+        "constant.language.boolean.false.editorconfig",
+        "constant.language.boolean.off.editorconfig",
         "meta.tag.attributes keyword.operator.assignment"
       ],
       "settings": {
@@ -631,7 +640,7 @@
         "source.sql"
       ],
       "settings": {
-        "foreground": "#BCBEC3E9"
+        "foreground": "#BCBEC3EE"
       }
     },
     {
@@ -656,7 +665,7 @@
         "comment.block.documentation meta.other.type.phpdoc.php"
       ],
       "settings": {
-        "foreground": "#BCBEC3E9",
+        "foreground": "#BCBEC3EE",
         "fontStyle": "italic"
       }
     },
@@ -736,6 +745,7 @@
     {
       "scope": [
         "variable.language.this.ts",
+        "entity.name.section.group-title.editorconfig",
         "meta.array.literal.js meta.objectliteral.js meta.object.member.js meta.function-call.js entity.name.function.js"
       ],
       "settings": {
@@ -758,6 +768,15 @@
       "scope": [
         "meta.object-literal.key.js",
         "variable.other.object.property.js",
+        "keyword.other.definition.root.editorconfig",
+        "keyword.other.definition.custom.editorconfig",
+        "keyword.other.definition.charset.editorconfig",
+        "keyword.other.definition.end_of_line.editorconfig",
+        "keyword.other.definition.indent_size.editorconfig",
+        "keyword.other.definition.indent_style.editorconfig",
+        "keyword.other.definition.insert_final_newline.editorconfig",
+        "keyword.other.definition.trim_trailing_whitespace.editorconfig",
+        "keyword.other.definition.max_line_length.editorconfig",
         "source.ts.embedded.html.vue variable.other.object.property.ts",
         "meta.method.declaration.js variable.other.property.js",
         "meta.arrow.js variable.other.property.js",
@@ -891,7 +910,8 @@
         "source.vue variable.other.constant.js",
         "source.vue variable.other.object.ts",
         "meta.attribute.php entity.name.variable.parameter.php",
-        "meta.embedded.block.php meta.attribute.php support.class.php"
+        "meta.embedded.block.php meta.attribute.php support.class.php",
+        "storage.modifier.reference.php"
       ],
       "settings": {
         "foreground": "#BCBEC3EE"
