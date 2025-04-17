@@ -453,7 +453,8 @@
     {
       "scope": [
         "variable.other.readwrite",
-        "variable.other.constant"
+        "variable.other.constant",
+        "selector.operator.js"
       ],
       "settings": {
         "foreground": "#a9b7c5"
@@ -823,18 +824,28 @@
         "variable.other.readwrite.alias.ts",
         "variable.other.readwrite.alias.js",
         "source.ts variable.other.object.ts",
+        "source.js.embedded.php meta.brace.round.js",
+        "source.js.embedded.php meta.jsx.children.js",
         "punctuation.definition.template-expression.end.js",
         "punctuation.definition.template-expression.begin.js",
         "meta.export.default.ts variable.other.readwrite.ts",
+        "source.js.embedded.php punctuation.definition.block.js",
         "meta.method.declaration.ts variable.other.readwrite.ts",
         "meta.definition.variable.js variable.other.constant.js",
+        "source.js.embedded.php punctuation.terminator.statement.js",
+        "source.js.embedded.php punctuation.definition.parameters.end.js",
+        "source.js.embedded.php punctuation.definition.parameters.begin.js",
         "meta.class.ts meta.field.declaration.ts meta.type.annotation.ts entity.name.type.module.ts",
         "string.template.ts meta.template.expression.ts punctuation.definition.template-expression.begin.ts",
         "string.template.ts meta.template.expression.ts punctuation.definition.template-expression.end.ts",
         "meta.method.declaration.ts meta.block.ts new.expr.ts meta.function-call.ts entity.name.function.ts",
         "variable.other.constant.property variable.other.object.property variable.other.property variable.other.object entity.name.constant entity.name.type.module",
+        "text.html.embedded.php punctuation.section.property-list.begin.bracket.curly.css",
+        "text.html.embedded.php punctuation.section.property-list.end.bracket.curly.css",
         "punctuation.definition.brace.bracket.curly.begin.editorconfig",
         "punctuation.definition.brace.bracket.curly.end.editorconfig",
+        "punctuation.definition.begin.bracket.curly.php",
+        "punctuation.definition.end.bracket.curly.php",
         "variable.other.readwrite.js"
       ],
       "settings": {
@@ -880,7 +891,8 @@
         "source.css entity.name.function",
         "source.css support.type.map.key",
         "source.css support.constant.language-range",
-        "source.css support.function"
+        "source.css support.function",
+        "selector.text.js"
       ],
       "settings": {
         "foreground": "#C6B377E9"
@@ -947,7 +959,8 @@
         "source.vue text.html.derivative meta.tag.custom.end.html entity.name.tag.html",
         "meta.tag.js entity.name.tag.js support.class.component.js",
         "meta.jsx.children.js support.class.component.js",
-        "support.class.component.tsx"
+        "support.class.component.tsx",
+        "selector.number.js"
       ],
       "settings": {
         "foreground": "#29B9A0EE"
