@@ -435,7 +435,9 @@
       "scope": [
         "entity.name.type.parameter",
         "meta.type.parameters entity.name.type",
-        "meta.type.infer entity.name.type"
+        "meta.type.infer entity.name.type",
+        "meta.return.type.ts",
+        "meta.return.type.tsx"
       ],
       "settings": {
         "foreground": "#507874"
@@ -509,8 +511,7 @@
         "string.other.link.description.title.markdown"
       ],
       "settings": {
-        "foreground": "#59AAE7EA",
-        "fontStyle": ""
+        "foreground": "#59AAE7EA"
       }
     },
     {
@@ -723,6 +724,9 @@
     {
       "scope": [
         "entity.name.function.js",
+        "entity.name.function.jsx",
+        "entity.name.function.tsx",
+        "constant.character.entity.tsx",
         "support.function.constructor.php",
         "support.function.array.php",
         "support.function.math.php",
@@ -760,25 +764,31 @@
       "scope": [
         "meta.object-literal.key.js",
         "variable.other.object.property.js",
+        "variable.other.object.property.jsx",
+        "variable.other.object.property.tsx",
         "keyword.other.definition.root.editorconfig",
         "keyword.other.definition.custom.editorconfig",
         "keyword.other.definition.charset.editorconfig",
         "keyword.other.definition.end_of_line.editorconfig",
         "keyword.other.definition.indent_size.editorconfig",
         "keyword.other.definition.indent_style.editorconfig",
+        "keyword.other.definition.max_line_length.editorconfig",
         "keyword.other.definition.insert_final_newline.editorconfig",
         "keyword.other.definition.trim_trailing_whitespace.editorconfig",
-        "keyword.other.definition.max_line_length.editorconfig",
+        "meta.embedded.expression.tsx variable.other.constant.object.tsx",
+        "meta.embedded.expression.tsx variable.other.constant.property.tsx",
         "source.ts.embedded.html.vue variable.other.object.property.ts",
         "meta.method.declaration.js variable.other.property.js",
+        "meta.jsx.children.tsx variable.other.readwrite.tsx",
         "text.html.embedded.js variable.other.readwrite.js",
         "text.html.embedded.js variable.other.property.js",
         "string.template.js variable.other.readwrite.js",
         "string.template.js variable.other.property.js",
         "meta.arrow.js variable.other.property.js",
         "variable.other.readwrite.alias.ts",
+        "variable.other.property.tsx",
+        "variable.object.property.tsx",
         "variable.object.property.js",
-        "variable.other.readwrite.ts",
         "meta.object-literal.key.ts",
         "variable.other.property.ts"
       ],
@@ -851,7 +861,11 @@
         "string.quoted.single.js text.xml.embedded.js",
         "string.template.js text.html.embedded.js",
         "string.template.js text.xml.embedded.js",
-        "variable.other.readwrite.js"
+        "variable.other.readwrite.js",
+        "entity.name.type.ts",
+        "entity.name.type.tsx",
+        "support.type.ts",
+        "support.type.tsx"
       ],
       "settings": {
         "foreground": "#BCBEC4EB",
@@ -932,7 +946,6 @@
         "keyword.control.conditional.vue",
         "punctuation.separator.key-value.html.vue",
         "source.vue variable.other.readwrite.alias.js",
-        "source.ts variable.other.constant.ts",
         "source.vue variable.other.readwrite.js",
         "source.vue variable.other.constant.js",
         "source.vue variable.other.object.ts",
@@ -983,6 +996,7 @@
     },
     {
       "scope": [
+        "source.ts variable.other.constant.ts",
         "meta.attribute.directive.vue source.ts.embedded.html.vue variable.other.object.ts",
         "markup.fenced_code.block.markdown fenced_code.block.language.markdown"
       ],
