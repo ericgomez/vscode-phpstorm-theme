@@ -543,7 +543,9 @@
         "punctuation.section.embedded.end.php",
         "support.function.construct.output.php",
         "punctuation.section.embedded.begin.php",
-        "meta.tag.blade keyword.operator.logical.php",
+        "meta.union.type.php punctuation.separator.pipe.php",
+        "storage.type.php support.type.php",
+        "keyword.operator.logical.php",
         "storage.type.php",
         "storage.modifier.php",
         "storage.type.class.php",
@@ -586,7 +588,6 @@
         "punctuation.definition.variable.php",
         "variable.language.this.php",
         "variable.other.class.php",
-        "constant.other.class.php",
         "constant.other.php",
         "punctuation.definition.array.begin.php",
         "punctuation.definition.array.end.php",
@@ -602,7 +603,7 @@
         "support.constant.ext.php",
         "meta.embedded.inline.phpx support.constant.core.php",
         "constant.other.class.php",
-        "constant.other.php"
+        "constant.enum.php"
       ],
       "settings": {
         "foreground": "#9878A1FD",
@@ -633,6 +634,8 @@
         "keyword.operator.null-coalescing.php",
         "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
         "meta.embedded.inline.phpx punctuation.definition.tag.end.html",
+        "punctuation.definition.parameters.begin.bracket.round.php",
+        "punctuation.definition.parameters.end.bracket.round.php",
         "punctuation.definition.arguments.begin.bracket.round.php",
         "punctuation.definition.arguments.end.bracket.round.php",
         "keyword.operator.increment-decrement.php",
@@ -726,13 +729,8 @@
         "entity.name.function.js",
         "entity.name.function.jsx",
         "entity.name.function.tsx",
-        "constant.character.entity.tsx",
-        "support.function.constructor.php",
-        "support.function.array.php",
-        "support.function.math.php",
-        "support.function.json.php",
-        "meta.function-call.php",
-        "entity.name.function.php"
+        "variable.other.object.tsx",
+        "constant.character.entity.tsx"
       ],
       "settings": {
         "foreground": "#59AAE7EA"
@@ -849,6 +847,7 @@
         "text.html.embedded.php punctuation.section.property-list.end.bracket.curly.css",
         "punctuation.definition.brace.bracket.curly.begin.editorconfig",
         "punctuation.definition.brace.bracket.curly.end.editorconfig",
+        "punctuation.separator.delimiter.comma.editorconfig",
         "string.quoted.double.php punctuation.definition.variable.php",
         "string.quoted.single.php punctuation.definition.variable.php",
         "string.quoted.double.php text.html.embedded.php",
@@ -869,7 +868,7 @@
       ],
       "settings": {
         "foreground": "#BCBEC4EB",
-        "fontStyle": "normal"
+        "fontStyle": ""
       }
     },
     {
@@ -934,7 +933,9 @@
         "meta.decorator entity.name.function",
         "constant.other.character-class.regexp",
         "meta.attribute.php support.attribute.php",
-        "meta.class.php meta.attribute.php support.other.namespace.php"
+        "meta.class.php meta.attribute.php support.other.namespace.php",
+        "meta.attribute.php entity.name.attribute.php",
+        "meta.attribute.php support.class.php"
       ],
       "settings": {
         "foreground": "#B3AE60F2"
@@ -961,7 +962,8 @@
       "scope": [
         "meta.embedded.block.php meta.method-call.php entity.name.variable.parameter.php",
         "meta.embedded.block.php meta.attribute.php entity.name.variable.parameter.php",
-        "meta.embedded.block.php meta.attribute.php punctuation.separator.colon.php"
+        "meta.embedded.block.php meta.attribute.php punctuation.separator.colon.php",
+        "meta.method-call.php punctuation.separator.colon.php"
       ],
       "settings": {
         "foreground": "#567CDAF5"
