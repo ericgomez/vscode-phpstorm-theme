@@ -134,9 +134,9 @@
     "breadcrumb.focusForeground": "#dfe1e5",
     "breadcrumb.activeSelectionForeground": "#dfe1e5",
     "breadcrumbPicker.background": "#2b2d30",
-    "scrollbarSlider.activeBackground": "#535455a6",
-    "scrollbarSlider.background": "#3f4043a6",
-    "scrollbarSlider.hoverBackground": "#535455a6",
+    "scrollbarSlider.background": "#7a7a7a80",
+    "scrollbarSlider.hoverBackground": "#7a7a7a90",
+    "scrollbarSlider.activeBackground": "#7a7a7a90",
     "debugIcon.breakpointForeground": "#db5c5c",
     "editor.background": "#1e1f22",
     "editor.foreground": "#BCBEC4EB",
@@ -585,13 +585,13 @@
         "variable.other.php.dollar.php",
         "variable.other.global.safer.php",
         "variable.other.php.dollar.bracket.php",
+        "punctuation.definition.array.begin.php",
+        "punctuation.definition.array.end.php",
+        "punctuation.separator.key-value.php",
         "punctuation.definition.variable.php",
         "variable.language.this.php",
         "variable.other.class.php",
-        "constant.other.php",
-        "punctuation.definition.array.begin.php",
-        "punctuation.definition.array.end.php",
-        "punctuation.separator.key-value.php"
+        "constant.other.php"
       ],
       "settings": {
         "foreground": "#9878A1FD"
@@ -632,15 +632,31 @@
         "keyword.operator.return-value.php",
         "punctuation.section.array.begin.php",
         "keyword.operator.null-coalescing.php",
+        "text.html.php.blade meta.function.echo.blade source.php",
+        "text.html.php.blade meta.function.echo.blade constant.other.php",
+        "text.html.php.blade meta.function.echo.blade source.php entity.name.class.php",
+        "text.html.php.blade meta.function.echo.blade support.function.construct.begin.blade",
+        "text.html.php.blade meta.function.echo.blade support.function.construct.end.blade",
         "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
         "meta.embedded.inline.phpx punctuation.definition.tag.end.html",
+        "punctuation.definition.storage-type.begin.bracket.round.php",
+        "punctuation.definition.storage-type.end.bracket.round.php",
         "punctuation.definition.parameters.begin.bracket.round.php",
         "punctuation.definition.parameters.end.bracket.round.php",
         "punctuation.definition.arguments.begin.bracket.round.php",
         "punctuation.definition.arguments.end.bracket.round.php",
+        "punctuation.section.property-list.begin.bracket.curly.css",
+        "punctuation.section.property-list.end.bracket.curly.css",
+        "punctuation.definition.entity.begin.bracket.square.css",
+        "punctuation.definition.entity.end.bracket.square.css",
+        "punctuation.section.function.begin.bracket.round.css",
+        "punctuation.section.function.end.bracket.round.css",
+        "punctuation.separator.list.comma.css",
+        "punctuation.terminator.rule.css",
         "keyword.operator.increment-decrement.php",
         "punctuation.terminator.expression.php",
         "punctuation.separator.delimiter.php",
+        "keyword.other.unit.percentage.css",
         "keyword.definition.arrow.php",
         "keyword.operator.string.php",
         "source.sql.embedded.php",
@@ -653,6 +669,7 @@
     {
       "scope": [
         "meta.class.php support.other.namespace.php",
+        "support.class.builtin.php punctuation.separator.inheritance.php",
         "meta.class.php meta.class.body.php meta.method-call.php support.other.namespace.php"
       ],
       "settings": {
@@ -838,6 +855,7 @@
         "source.js.embedded.php punctuation.terminator.statement.js",
         "source.js.embedded.php punctuation.definition.parameters.end.js",
         "source.js.embedded.php punctuation.definition.parameters.begin.js",
+        "meta.template.expression.js source.js.embedded.expression meta.brace.round.js",
         "meta.class.ts meta.field.declaration.ts meta.type.annotation.ts entity.name.type.module.ts",
         "string.template.ts meta.template.expression.ts punctuation.definition.template-expression.begin.ts",
         "string.template.ts meta.template.expression.ts punctuation.definition.template-expression.end.ts",
@@ -848,8 +866,6 @@
         "punctuation.definition.brace.bracket.curly.begin.editorconfig",
         "punctuation.definition.brace.bracket.curly.end.editorconfig",
         "punctuation.separator.delimiter.comma.editorconfig",
-        "string.quoted.double.php punctuation.definition.variable.php",
-        "string.quoted.single.php punctuation.definition.variable.php",
         "string.quoted.double.php text.html.embedded.php",
         "string.quoted.single.php text.html.embedded.php",
         "punctuation.definition.begin.bracket.curly.php",
@@ -858,6 +874,7 @@
         "string.quoted.single.js text.html.embedded.js",
         "string.quoted.double.js text.xml.embedded.js",
         "string.quoted.single.js text.xml.embedded.js",
+        "string.template.js punctuation.accessor.js",
         "string.template.js text.html.embedded.js",
         "string.template.js text.xml.embedded.js",
         "variable.other.readwrite.js",
@@ -912,7 +929,9 @@
         "source.css entity.name.function",
         "source.css support.type.map.key",
         "source.css support.constant.language-range",
-        "source.css support.function"
+        "support.function.gradient.css",
+        "source.css support.function",
+        "support.function.misc.css"
       ],
       "settings": {
         "foreground": "#D2B982EB"
@@ -960,10 +979,9 @@
     },
     {
       "scope": [
-        "meta.embedded.block.php meta.method-call.php entity.name.variable.parameter.php",
-        "meta.embedded.block.php meta.attribute.php entity.name.variable.parameter.php",
-        "meta.embedded.block.php meta.attribute.php punctuation.separator.colon.php",
-        "meta.method-call.php punctuation.separator.colon.php"
+        "punctuation.separator.colon.php",
+        "entity.name.variable.parameter.php",
+        "meta.attribute.php entity.name.variable.parameter.php"
       ],
       "settings": {
         "foreground": "#567CDAF5"
