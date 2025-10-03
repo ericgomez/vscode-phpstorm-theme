@@ -134,9 +134,9 @@
     "breadcrumb.focusForeground": "#dfe1e5",
     "breadcrumb.activeSelectionForeground": "#dfe1e5",
     "breadcrumbPicker.background": "#2b2d30",
-    "scrollbarSlider.background": "#7a7a7a80",
-    "scrollbarSlider.hoverBackground": "#7a7a7a90",
-    "scrollbarSlider.activeBackground": "#7a7a7a90",
+    "scrollbarSlider.background": "#7a7a7a55",
+    "scrollbarSlider.hoverBackground": "#7a7a7a65",
+    "scrollbarSlider.activeBackground": "#7a7a7a65",
     "debugIcon.breakpointForeground": "#db5c5c",
     "editor.background": "#1e1f22",
     "editor.foreground": "#BCBEC4EB",
@@ -252,7 +252,7 @@
   },
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "namespace": {
+    "namespace.defaultLibrary": {
       "foreground": "#C582BAEB",
       "fontStyle": "italic"
     },
@@ -289,6 +289,9 @@
     },
     "property.defaultLibrary": {
       "foreground": "#C582BAEB"
+    },
+    "component": {
+      "foreground": "#29B9A0EE"
     }
   },
   "tokenColors": [
@@ -456,16 +459,6 @@
     },
     {
       "scope": [
-        "variable.other.readwrite",
-        "variable.other.constant",
-        "selector.operator.js"
-      ],
-      "settings": {
-        "foreground": "#a9b7c5"
-      }
-    },
-    {
-      "scope": [
         "variable.other.jsdoc",
         "entity.name.type.instance.jsdoc"
       ],
@@ -505,9 +498,6 @@
         "meta.method.declaration.ts meta.block.ts entity.name.function.ts",
         "meta.method.declaration.ts meta.definition.method.ts entity.name.function.ts",
         "meta.field.declaration.ts meta.definition.property.ts entity.name.function.ts",
-        "meta.method.declaration.ts meta.block.ts variable.other.property.ts",
-        "meta.tag.attributes.js.jsx meta.embedded.expression.js.jsx variable.other.readwrite.js.jsx",
-        "meta.object.member.js.jsx variable.other.property.js.jsx",
         "string.other.link.description.title.markdown"
       ],
       "settings": {
@@ -565,8 +555,11 @@
         "storage.modifier.implements.php",
         "keyword.control.exception.catch.php",
         "keyword.control.exception.php",
+        "begin.bracket.round.blade.php",
+        "end.bracket.round.blade.php",
         "keyword.control.foreach.php",
         "keyword.other.namespace.php",
+        "entity.name.function.blade",
         "keyword.control.return.php",
         "keyword.control.else.php",
         "keyword.control.if.php",
@@ -632,6 +625,8 @@
         "keyword.operator.return-value.php",
         "punctuation.section.array.begin.php",
         "keyword.operator.null-coalescing.php",
+        "meta.tag.structure entity.name.function.blade",
+        "meta.other.type.phpdoc.php keyword.other.type.php",
         "text.html.php.blade meta.function.echo.blade source.php",
         "text.html.php.blade meta.function.echo.blade constant.other.php",
         "text.html.php.blade meta.function.echo.blade source.php entity.name.class.php",
@@ -685,7 +680,15 @@
     },
     {
       "scope": [
-        "keyword.other.phpdoc.php",
+        "keyword.other.phpdoc.php"
+      ],
+      "settings": {
+        "foreground": "#6AAB73EB",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": [
         "comment.block.documentation meta.other.type.phpdoc.php"
       ],
       "settings": {
@@ -717,25 +720,45 @@
     {
       "scope": [
         "storage.type.js",
+        "storage.type.ts",
         "keyword.control.from.js",
+        "keyword.control.from.ts",
         "keyword.control.flow.js",
+        "keyword.control.flow.ts",
         "keyword.control.loop.js",
+        "keyword.control.loop.ts",
         "keyword.operator.new.js",
+        "keyword.operator.new.ts",
         "storage.type.function.js",
+        "storage.type.function.ts",
         "keyword.control.import.js",
+        "keyword.control.import.ts",
         "constant.language.null.js",
+        "constant.language.null.ts",
         "keyword.control.export.js",
+        "keyword.control.export.ts",
         "storage.modifier.async.js",
+        "storage.modifier.async.ts",
         "keyword.control.switch.js",
+        "keyword.control.switch.ts",
         "variable.language.this.js",
+        "variable.language.this.ts",
         "keyword.control.trycatch.js",
+        "keyword.control.trycatch.ts",
         "keyword.generator.asterisk.js",
+        "keyword.generator.asterisk.ts",
         "constant.language.undefined.js",
+        "constant.language.undefined.ts",
         "keyword.control.conditional.js",
+        "keyword.control.conditional.ts",
         "constant.language.boolean.true.js",
+        "constant.language.boolean.true.ts",
         "keyword.operator.expression.of.js",
+        "keyword.operator.expression.of.ts",
         "keyword.operator.expression.in.js",
-        "constant.language.boolean.false.js"
+        "keyword.operator.expression.in.ts",
+        "constant.language.boolean.false.js",
+        "constant.language.boolean.false.ts"
       ],
       "settings": {
         "foreground": "#C69179F2"
@@ -744,6 +767,7 @@
     {
       "scope": [
         "entity.name.function.js",
+        "entity.name.function.ts",
         "entity.name.function.jsx",
         "entity.name.function.tsx",
         "variable.other.object.tsx",
@@ -756,8 +780,7 @@
     {
       "scope": [
         "variable.language.this.ts",
-        "entity.name.section.group-title.editorconfig",
-        "meta.array.literal.js meta.objectliteral.js meta.object.member.js meta.function-call.js entity.name.function.js"
+        "entity.name.section.group-title.editorconfig"
       ],
       "settings": {
         "foreground": "#C69179F2"
@@ -767,7 +790,9 @@
       "scope": [
         "meta.export.default.ts variable.other.object.ts",
         "meta.definition.variable.js",
+        "meta.definition.variable.ts",
         "variable.other.constant.js",
+        "variable.other.constant.ts",
         "support.variable.property"
       ],
       "settings": {
@@ -777,13 +802,20 @@
     },
     {
       "scope": [
-        "meta.object-literal.key.js",
+        "meta.object-literal.key",
+        "variable.other.property.js",
+        "variable.other.property.ts",
+        "variable.other.property.tsx",
+        "variable.other.property.js.jsx",
         "variable.other.object.property.js",
+        "variable.other.object.property.ts",
         "variable.other.object.property.jsx",
         "variable.other.object.property.tsx",
+        "variable.other.object.property.js.jsx",
         "keyword.other.definition.root.editorconfig",
         "keyword.other.definition.custom.editorconfig",
         "keyword.other.definition.charset.editorconfig",
+        "keyword.other.definition.tab_width.editorconfig",
         "keyword.other.definition.end_of_line.editorconfig",
         "keyword.other.definition.indent_size.editorconfig",
         "keyword.other.definition.indent_style.editorconfig",
@@ -794,18 +826,20 @@
         "meta.embedded.expression.tsx variable.other.constant.property.tsx",
         "source.ts.embedded.html.vue variable.other.object.property.ts",
         "meta.method.declaration.js variable.other.property.js",
-        "meta.jsx.children.tsx variable.other.readwrite.tsx",
-        "text.html.embedded.js variable.other.readwrite.js",
+        "meta.method.declaration.ts variable.other.property.ts",
+        "text.html.embedded.ts variable.other.readwrite.ts",
         "text.html.embedded.js variable.other.property.js",
-        "string.template.js variable.other.readwrite.js",
+        "text.html.embedded.ts variable.other.property.ts",
         "string.template.js variable.other.property.js",
+        "string.template.ts variable.other.property.ts",
+        "meta.arrow.tsx variable.other.property.tsx",
         "meta.arrow.js variable.other.property.js",
+        "meta.arrow.ts variable.other.property.ts",
         "variable.other.readwrite.alias.ts",
-        "variable.other.property.tsx",
         "variable.object.property.tsx",
         "variable.object.property.js",
-        "meta.object-literal.key.ts",
-        "variable.other.property.ts"
+        "variable.object.property.ts",
+        "meta.object-literal.key.ts"
       ],
       "settings": {
         "foreground": "#C582BAEB"
@@ -838,24 +872,56 @@
     },
     {
       "scope": [
+        "meta.brace.round.js",
+        "meta.brace.round.ts",
         "variable.other.object.js",
+        "variable.other.object.ts",
+        "variable.other.readwrite.js",
+        "variable.other.readwrite.ts",
+        "variable.other.readwrite.tsx",
         "support.type.object.module.js",
+        "support.type.object.module.ts",
+        "punctuation.separator.comma.js",
+        "punctuation.separator.comma.ts",
+        "variable.other.readwrite.js.jsx",
         "punctuation.accessor.optional.js",
-        "variable.other.readwrite.alias.ts",
+        "punctuation.accessor.optional.ts",
         "variable.other.readwrite.alias.js",
+        "variable.other.readwrite.alias.ts",
         "source.ts variable.other.object.ts",
+        "constant.language.import-export-all.js",
+        "constant.language.import-export-all.ts",
         "source.js.embedded.php meta.brace.round.js",
+        "source.js.embedded.php meta.brace.round.ts",
         "source.js.embedded.php meta.jsx.children.js",
+        "source.js.embedded.php meta.jsx.children.ts",
+        "string.template.js variable.other.readwrite.js",
+        "string.template.ts variable.other.readwrite.ts",
+        "meta.function-call.js variable.other.object.js",
+        "meta.function-call.js variable.other.object.ts",
+        "meta.function-call.tsx variable.other.object.tsx",
+        "text.html.embedded.js variable.other.readwrite.js",
         "punctuation.definition.template-expression.end.js",
+        "punctuation.definition.template-expression.end.ts",
         "punctuation.definition.template-expression.begin.js",
+        "punctuation.definition.template-expression.begin.ts",
         "meta.export.default.ts variable.other.readwrite.ts",
         "source.js.embedded.php punctuation.definition.block.js",
+        "source.js.embedded.php punctuation.definition.block.ts",
         "meta.method.declaration.ts variable.other.readwrite.ts",
         "meta.definition.variable.js variable.other.constant.js",
+        "meta.definition.variable.ts variable.other.constant.ts",
         "source.js.embedded.php punctuation.terminator.statement.js",
+        "source.js.embedded.php punctuation.terminator.statement.ts",
         "source.js.embedded.php punctuation.definition.parameters.end.js",
+        "source.js.embedded.php punctuation.definition.parameters.end.ts",
         "source.js.embedded.php punctuation.definition.parameters.begin.js",
+        "source.js.embedded.php punctuation.definition.parameters.begin.ts",
+        "meta.objectliteral.js meta.object.member.js variable.other.object.js",
+        "meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
+        "meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
         "meta.template.expression.js source.js.embedded.expression meta.brace.round.js",
+        "meta.template.expression.ts source.js.embedded.expression meta.brace.round.ts",
         "meta.class.ts meta.field.declaration.ts meta.type.annotation.ts entity.name.type.module.ts",
         "string.template.ts meta.template.expression.ts punctuation.definition.template-expression.begin.ts",
         "string.template.ts meta.template.expression.ts punctuation.definition.template-expression.end.ts",
@@ -865,6 +931,10 @@
         "text.html.embedded.php punctuation.section.property-list.end.bracket.curly.css",
         "punctuation.definition.brace.bracket.curly.begin.editorconfig",
         "punctuation.definition.brace.bracket.curly.end.editorconfig",
+        "string.template.js variable.other.constant.property.js",
+        "string.template.ts variable.other.constant.property.ts",
+        "punctuation.definition.template-expression.begin.tsx",
+        "punctuation.definition.template-expression.end.tsx",
         "punctuation.separator.delimiter.comma.editorconfig",
         "string.quoted.double.php text.html.embedded.php",
         "string.quoted.single.php text.html.embedded.php",
@@ -877,7 +947,11 @@
         "string.template.js punctuation.accessor.js",
         "string.template.js text.html.embedded.js",
         "string.template.js text.xml.embedded.js",
-        "variable.other.readwrite.js",
+        "punctuation.accessor.optional.tsx",
+        "punctuation.separator.comma.tsx",
+        "punctuation.accessor.tsx",
+        "meta.brace.round.tsx",
+        "meta.brace.round.ts",
         "entity.name.type.ts",
         "entity.name.type.tsx",
         "support.type.ts",
@@ -890,8 +964,8 @@
     },
     {
       "scope": [
-        "meta.function-call.js variable.other.object.js",
-        "meta.export.default.js variable.other.readwrite.js"
+        "meta.export.default.js variable.other.readwrite.js",
+        "meta.export.default.js variable.other.readwrite.ts"
       ],
       "settings": {
         "foreground": "#BCBEC4EB",
@@ -914,6 +988,8 @@
         "entity.other.attribute-name.scss",
         "entity.other.attribute-name.css",
         "entity.other.attribute-name.attribute.scss",
+        "source.vue text.html.derivative meta.template-tag.start entity.name.tag.template.html.vue",
+        "source.vue text.html.derivative meta.template-tag.end entity.name.tag.template.html.vue",
         "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
         "entity.other.attribute-name.placeholder.css",
         "entity.other.attribute-name.placeholder.css punctuation.definition.entity",
@@ -939,7 +1015,8 @@
     },
     {
       "scope": [
-        "selector.text.js"
+        "selector.text.js",
+        "selector.text.ts"
       ],
       "settings": {
         "foreground": "#D5B982F0"
@@ -965,10 +1042,13 @@
         "keyword.control.loop.vue",
         "keyword.control.conditional.vue",
         "punctuation.separator.key-value.html.vue",
-        "source.vue variable.other.readwrite.alias.js",
         "source.vue variable.other.readwrite.js",
+        "source.vue variable.other.readwrite.ts",
         "source.vue variable.other.constant.js",
+        "source.vue variable.other.constant.ts",
         "source.vue variable.other.object.ts",
+        "source.vue variable.other.readwrite.alias.js",
+        "source.vue variable.other.readwrite.alias.ts",
         "meta.attribute.php entity.name.variable.parameter.php",
         "meta.embedded.block.php meta.attribute.php support.class.php",
         "storage.modifier.reference.php"
@@ -1003,12 +1083,19 @@
         "entity.name.tag.script.html.vue",
         "entity.name.tag.template.html.vue",
         "source.vue invalid.illegal.unrecognized-tag.html",
+        "source.vue text.html.derivative meta.tag.other.unrecognized.html.derivative entity.name.tag.html",
+        "source.vue text.html.derivative meta.tag.structure.slot.start.html entity.name.tag.html",
+        "source.vue text.html.derivative meta.tag.structure.slot.end.html entity.name.tag.html",
         "source.vue text.html.derivative meta.tag.custom.start.html entity.name.tag.html",
         "source.vue text.html.derivative meta.tag.custom.end.html entity.name.tag.html",
         "meta.tag.js entity.name.tag.js support.class.component.js",
+        "meta.tag.js entity.name.tag.js support.class.component.ts",
         "meta.jsx.children.js support.class.component.js",
+        "meta.jsx.children.js support.class.component.ts",
         "support.class.component.tsx",
-        "selector.number.js"
+        "support.class.component.js",
+        "selector.number.js",
+        "selector.number.ts"
       ],
       "settings": {
         "foreground": "#29B9A0EE"
@@ -1017,7 +1104,6 @@
     {
       "scope": [
         "source.ts variable.other.constant.ts",
-        "meta.attribute.directive.vue source.ts.embedded.html.vue variable.other.object.ts",
         "markup.fenced_code.block.markdown fenced_code.block.language.markdown"
       ],
       "settings": {

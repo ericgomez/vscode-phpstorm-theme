@@ -32,7 +32,7 @@ To further enhance your experience with the **PhpStorm Dark Theme**, we recommen
 
 * **Icon Theme**: Enhance the visual consistency of your editor with the [JetBrains Icon Theme](https://marketplace.visualstudio.com/items?itemName=chadalen.vscode-jetbrains-icon-theme), which provides a set of icons inspired by JetBrains.
 * **PHP String Syntax**: Improve your PHP coding experience with [PHP String Syntax](https://marketplace.visualstudio.com/items?itemName=ericgomez.php-string-syntax), which highlights SQL, HTML, and JavaScript embedded in PHP strings.
-* **JS String Syntax**: Improve your JavaScript coding experience with [JS String Syntax](https://marketplace.visualstudio.com/items?itemName=ericgomez.js-string-syntax), which highlights SQL, and HTML embedded in JavaScript strings.
+* **JS String Syntax**: Improve your JavaScript coding experience with [JS String Syntax](https://marketplace.visualstudio.com/items?itemName=ericgomez.js-string-syntax), which highlights SQL, HTML/XML, and CSS embedded in JavaScript strings.
 * **Breakpoint Highlighting**: Make breakpoints stand out more effectively with [Breakpoint Highlight](https://marketplace.visualstudio.com/items?itemName=ericgomez.breakpoint-highlight), improving your debugging workflow.
 
 These optional adjustments will help recreate a development experience more akin to JetBrains PhpStorm within Visual Studio Code.
