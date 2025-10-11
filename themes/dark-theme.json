@@ -388,10 +388,12 @@
     },
     {
       "scope": [
-        "keyword.control.at-rule.mixin.scss"
+        "keyword.control.at-rule.mixin.scss",
+        "punctuation.definition.variable.less",
+        "support.other.variable.less"
       ],
       "settings": {
-        "foreground": "#d0cfff"
+        "foreground": "#D0CFFFE5"
       }
     },
     {
@@ -417,7 +419,9 @@
         "constant.numeric.decimal.integer.int.editorconfig",
         "constant.language.boolean.false.editorconfig",
         "constant.language.boolean.off.editorconfig",
-        "meta.tag.attributes keyword.operator.assignment"
+        "meta.tag.attributes keyword.operator.assignment",
+        "keyword.interpolation.begin.dotenv",
+        "keyword.interpolation.end.dotenv"
       ],
       "settings": {
         "foreground": "#6AAB73EF"
@@ -632,6 +636,7 @@
         "text.html.php.blade meta.function.echo.blade source.php entity.name.class.php",
         "text.html.php.blade meta.function.echo.blade support.function.construct.begin.blade",
         "text.html.php.blade meta.function.echo.blade support.function.construct.end.blade",
+        "entity.other.attribute-name.class.css punctuation.definition.entity.css",
         "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
         "meta.embedded.inline.phpx punctuation.definition.tag.end.html",
         "punctuation.definition.storage-type.begin.bracket.round.php",
@@ -646,12 +651,12 @@
         "punctuation.definition.entity.end.bracket.square.css",
         "punctuation.section.function.begin.bracket.round.css",
         "punctuation.section.function.end.bracket.round.css",
-        "punctuation.separator.list.comma.css",
-        "punctuation.terminator.rule.css",
         "keyword.operator.increment-decrement.php",
         "punctuation.terminator.expression.php",
+        "punctuation.separator.list.comma.css",
         "punctuation.separator.delimiter.php",
         "keyword.other.unit.percentage.css",
+        "punctuation.terminator.rule.css",
         "keyword.definition.arrow.php",
         "keyword.operator.string.php",
         "source.sql.embedded.php",
@@ -780,7 +785,8 @@
     {
       "scope": [
         "variable.language.this.ts",
-        "entity.name.section.group-title.editorconfig"
+        "entity.name.section.group-title.editorconfig",
+        "entity.name.function.stylus"
       ],
       "settings": {
         "foreground": "#C69179F2"
@@ -864,7 +870,8 @@
         "keyword.operator.relational",
         "keyword.operator.ternary",
         "string.unquoted.plain.out.yaml",
-        "constant.numeric.float.yaml"
+        "constant.numeric.float.yaml",
+        "punctuation.definition.character-class.regexp"
       ],
       "settings": {
         "foreground": "#BCBEC4EB"
@@ -895,6 +902,8 @@
         "source.js.embedded.php meta.brace.round.ts",
         "source.js.embedded.php meta.jsx.children.js",
         "source.js.embedded.php meta.jsx.children.ts",
+        "punctuation.definition.typeparameters.end.ts",
+        "punctuation.definition.typeparameters.begin.ts",
         "string.template.js variable.other.readwrite.js",
         "string.template.ts variable.other.readwrite.ts",
         "meta.function-call.js variable.other.object.js",
@@ -949,6 +958,7 @@
         "string.template.js text.xml.embedded.js",
         "punctuation.accessor.optional.tsx",
         "punctuation.separator.comma.tsx",
+        "punctuation.accessor.js.jsx",
         "punctuation.accessor.tsx",
         "meta.brace.round.tsx",
         "meta.brace.round.ts",
@@ -987,12 +997,19 @@
         "entity.other.attribute-name.pseudo-element",
         "entity.other.attribute-name.scss",
         "entity.other.attribute-name.css",
+        "variable.parameter.tailwind.tailwind",
+        "variable.parameter.layer.tailwind",
         "entity.other.attribute-name.attribute.scss",
+        "meta.at-rule.each.scss keyword.control.operator",
+        "meta.property-list.scss meta.at-rule.extend.scss punctuation.definition.entity.css",
         "source.vue text.html.derivative meta.template-tag.start entity.name.tag.template.html.vue",
         "source.vue text.html.derivative meta.template-tag.end entity.name.tag.template.html.vue",
         "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
+        "entity.other.attribute-name.parent-selector-suffix.stylus",
         "entity.other.attribute-name.placeholder.css",
         "entity.other.attribute-name.placeholder.css punctuation.definition.entity",
+        "meta.property-list.less entity.other.attribute-name.parent.less",
+        "meta.property-list.less punctuation.definition.entity.less",
         "entity.other.keyframe-offset",
         "punctuation.definition.tag",
         "storage.type.annotation",
@@ -1007,7 +1024,8 @@
         "source.css support.constant.language-range",
         "support.function.gradient.css",
         "source.css support.function",
-        "support.function.misc.css"
+        "support.function.misc.css",
+        "meta.selector.stylus"
       ],
       "settings": {
         "foreground": "#D2B982EB"
@@ -1031,7 +1049,8 @@
         "meta.attribute.php support.attribute.php",
         "meta.class.php meta.attribute.php support.other.namespace.php",
         "meta.attribute.php entity.name.attribute.php",
-        "meta.attribute.php support.class.php"
+        "meta.attribute.php support.class.php",
+        "entity.name.decorator.structure.ts"
       ],
       "settings": {
         "foreground": "#B3AE60F2"
@@ -1051,6 +1070,15 @@
         "source.vue variable.other.readwrite.alias.ts",
         "meta.attribute.php entity.name.variable.parameter.php",
         "meta.embedded.block.php meta.attribute.php support.class.php",
+        "entity.other.attribute-name.class.less punctuation.definition.entity.less",
+        "source.stylus meta.property-value.css meta.function.stylus keyword.other.unit.css",
+        "punctuation.definition.interpolation.begin.bracket.curly.scss",
+        "punctuation.definition.interpolation.end.bracket.curly.scss",
+        "meta.function-call.less punctuation.definition.entity.less",
+        "meta.property-list.scss punctuation.definition.entity.css",
+        "meta.function-call.less keyword.other.unit.less",
+        "source.stylus punctuation.definition.entity.css",
+        "meta.property-list.css meta.selector.stylus",
         "storage.modifier.reference.php"
       ],
       "settings": {
@@ -1071,7 +1099,9 @@
       "scope": [
         "punctuation.separator.key-value.html.vue",
         "punctuation.definition.string.begin.html.vue",
-        "punctuation.definition.string.end.html.vue"
+        "punctuation.definition.string.end.html.vue",
+        "source.stylus support.constant.property-value.css",
+        "meta.definition.variable.scss"
       ],
       "settings": {
         "foreground": "#6AAB73EF"
@@ -1092,6 +1122,7 @@
         "meta.tag.js entity.name.tag.js support.class.component.ts",
         "meta.jsx.children.js support.class.component.js",
         "meta.jsx.children.js support.class.component.ts",
+        "support.class.component.js.jsx",
         "support.class.component.tsx",
         "support.class.component.js",
         "selector.number.js",
