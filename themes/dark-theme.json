@@ -278,14 +278,8 @@
     "type": {
       "foreground": "#BCBEC4EB"
     },
-    "type.defaultLibrary": {
-      "fontStyle": "italic"
-    },
     "interface": {
       "foreground": "#BCBEC4EB"
-    },
-    "interface.defaultLibrary": {
-      "fontStyle": "italic"
     },
     "property.defaultLibrary": {
       "foreground": "#C582BAEB"
@@ -298,7 +292,9 @@
     {
       "name": "Comment",
       "scope": [
-        "comment"
+        "comment",
+        "source.astro comment.block",
+        "source.astro comment.line.double-slash"
       ],
       "settings": {
         "foreground": "#7A7E85"
@@ -452,10 +448,12 @@
     },
     {
       "scope": [
-        "meta.property-list variable.css",
-        "entity.other.attribute-name",
         "support.type.property-name",
-        "support.type.vendored.property-name"
+        "entity.other.attribute-name",
+        "meta.property-list variable.css",
+        "support.type.vendored.property-name",
+        "meta.tag.inline.span.start.html entity.name.function.blade",
+        "meta.tag.other.unrecognized.html.derivative entity.name.function.blade"
       ],
       "settings": {
         "foreground": "#BABABAE9"
@@ -502,6 +500,7 @@
         "meta.method.declaration.ts meta.block.ts entity.name.function.ts",
         "meta.method.declaration.ts meta.definition.method.ts entity.name.function.ts",
         "meta.field.declaration.ts meta.definition.property.ts entity.name.function.ts",
+        "source.vue meta.function-call.js entity.other.attribute-name.html.vue",
         "string.other.link.description.title.markdown"
       ],
       "settings": {
@@ -545,6 +544,7 @@
         "storage.type.class.php",
         "keyword.control.case.php",
         "keyword.control.break.php",
+        "keyword.operator.type.php",
         "storage.type.function.php",
         "keyword.control.switch.php",
         "storage.modifier.extends.php",
@@ -609,12 +609,16 @@
     },
     {
       "scope": [
-        "support.function.constructor.php",
-        "support.function.array.php",
-        "support.function.math.php",
-        "support.function.json.php",
         "meta.function-call.php",
-        "entity.name.function.php"
+        "entity.name.function.php",
+        "support.function.json.php",
+        "support.function.math.php",
+        "support.function.array.php",
+        "support.function.constructor.php",
+        "text.html constant.character.entity.named",
+        "meta.function-call.other.twig",
+        "meta.function-call.twig",
+        "support.function.twig"
       ],
       "settings": {
         "foreground": "#59AAE7EA"
@@ -625,17 +629,25 @@
         "keyword.operator.key.php",
         "keyword.operator.class.php",
         "keyword.operator.ternary.php",
+        "keyword.other.array.phpdoc.php",
         "punctuation.section.array.end.php",
         "keyword.operator.return-value.php",
         "punctuation.section.array.begin.php",
         "keyword.operator.null-coalescing.php",
+        "meta.use.php support.other.namespace.php",
         "meta.tag.structure entity.name.function.blade",
         "meta.other.type.phpdoc.php keyword.other.type.php",
+        "meta.class.php meta.class.body.php support.class.php",
         "text.html.php.blade meta.function.echo.blade source.php",
         "text.html.php.blade meta.function.echo.blade constant.other.php",
+        "text.html.php.blade meta.embedded.block.blade meta.function-call.php",
         "text.html.php.blade meta.function.echo.blade source.php entity.name.class.php",
         "text.html.php.blade meta.function.echo.blade support.function.construct.begin.blade",
+        "text.html.php.blade meta.embedded.block.blade meta.function-call.php constant.other.php",
+        "text.html.php.blade meta.embedded.block.blade meta.function-call.php entity.name.class.php",
+        "text.html.php.blade meta.tag.other.unrecognized.html.derivative punctuation.definition.tag.end.html",
         "text.html.php.blade meta.function.echo.blade support.function.construct.end.blade",
+        "meta.use.php support.other.namespace.php punctuation.separator.inheritance.php",
         "entity.other.attribute-name.class.css punctuation.definition.entity.css",
         "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
         "meta.embedded.inline.phpx punctuation.definition.tag.end.html",
@@ -651,6 +663,8 @@
         "punctuation.definition.entity.end.bracket.square.css",
         "punctuation.section.function.begin.bracket.round.css",
         "punctuation.section.function.end.bracket.round.css",
+        "punctuation.definition.begin.bracket.round.php",
+        "punctuation.definition.end.bracket.round.php",
         "keyword.operator.increment-decrement.php",
         "punctuation.terminator.expression.php",
         "punctuation.separator.list.comma.css",
@@ -660,6 +674,13 @@
         "keyword.definition.arrow.php",
         "keyword.operator.string.php",
         "source.sql.embedded.php",
+        "punctuation.section.tag.twig",
+        "punctuation.separator.property.twig",
+        "punctuation.definition.parameters.begin.twig",
+        "punctuation.definition.parameters.end.twig",
+        "punctuation.section.hash.begin.twig",
+        "punctuation.section.hash.end.twig",
+        "variable.other.twig",
         "source.sql"
       ],
       "settings": {
@@ -668,9 +689,9 @@
     },
     {
       "scope": [
-        "meta.class.php support.other.namespace.php",
-        "support.class.builtin.php punctuation.separator.inheritance.php",
-        "meta.class.php meta.class.body.php meta.method-call.php support.other.namespace.php"
+        "support.other.namespace.php",
+        "support.other.namespace.php punctuation.separator.inheritance.php",
+        "support.class.builtin.php punctuation.separator.inheritance.php"
       ],
       "settings": {
         "foreground": "#6F737A"
@@ -716,7 +737,8 @@
       "scope": [
         "constant.other.table-name.sql",
         "support.type.property-name.json",
-        "variable.other.property.php"
+        "variable.other.property.php",
+        "variable.other.property.twig"
       ],
       "settings": {
         "foreground": "#C582BAEB"
@@ -786,7 +808,15 @@
       "scope": [
         "variable.language.this.ts",
         "entity.name.section.group-title.editorconfig",
-        "entity.name.function.stylus"
+        "source.svelte punctuation.definition.keyword.svelte",
+        "source.svelte punctuation.section.embedded.end.svelte",
+        "source.svelte punctuation.section.embedded.begin.svelte",
+        "source.svelte punctuation.definition.block.begin.svelte",
+        "source.svelte punctuation.definition.block.end.svelte",
+        "source.svelte keyword.control.conditional.svelte",
+        "source.svelte keyword.control.svelte",
+        "entity.name.function.stylus",
+        "source.astro comment"
       ],
       "settings": {
         "foreground": "#C69179F2"
@@ -794,12 +824,12 @@
     },
     {
       "scope": [
-        "meta.export.default.ts variable.other.object.ts",
-        "meta.definition.variable.js",
-        "meta.definition.variable.ts",
         "variable.other.constant.js",
         "variable.other.constant.ts",
-        "support.variable.property"
+        "meta.definition.variable.js",
+        "meta.definition.variable.ts",
+        "meta.object.member meta.function-call variable.other.constant.object",
+        "meta.export.default.ts variable.other.object.ts"
       ],
       "settings": {
         "foreground": "#C582BAEB",
@@ -809,6 +839,7 @@
     {
       "scope": [
         "meta.object-literal.key",
+        "support.variable.property",
         "variable.other.property.js",
         "variable.other.property.ts",
         "variable.other.property.tsx",
@@ -898,6 +929,8 @@
         "source.ts variable.other.object.ts",
         "constant.language.import-export-all.js",
         "constant.language.import-export-all.ts",
+        "constant.language.import-export-all.jsx",
+        "constant.language.import-export-all.tsx",
         "source.js.embedded.php meta.brace.round.js",
         "source.js.embedded.php meta.brace.round.ts",
         "source.js.embedded.php meta.jsx.children.js",
@@ -953,17 +986,31 @@
         "string.quoted.single.js text.html.embedded.js",
         "string.quoted.double.js text.xml.embedded.js",
         "string.quoted.single.js text.xml.embedded.js",
+        "punctuation.definition.parameters.begin.js.jsx",
+        "punctuation.definition.parameters.end.js.jsx",
+        "punctuation.definition.parameters.begin.tsx",
+        "punctuation.definition.parameters.begin.js",
+        "punctuation.definition.parameters.begin.ts",
+        "punctuation.definition.parameters.end.js",
+        "punctuation.definition.parameters.end.ts",
+        "punctuation.definition.parameters.end.tsx",
         "string.template.js punctuation.accessor.js",
         "string.template.js text.html.embedded.js",
         "string.template.js text.xml.embedded.js",
+        "punctuation.separator.parameter.js.jsx",
+        "punctuation.separator.parameter.tsx",
+        "punctuation.separator.parameter.js",
+        "punctuation.separator.parameter.ts",
         "punctuation.accessor.optional.tsx",
         "punctuation.separator.comma.tsx",
         "punctuation.accessor.js.jsx",
         "punctuation.accessor.tsx",
+        "selector.operator.js",
+        "selector.operator.ts",
+        "entity.name.type.tsx",
         "meta.brace.round.tsx",
         "meta.brace.round.ts",
         "entity.name.type.ts",
-        "entity.name.type.tsx",
         "support.type.ts",
         "support.type.tsx"
       ],
@@ -974,16 +1021,7 @@
     },
     {
       "scope": [
-        "meta.export.default.js variable.other.readwrite.js",
-        "meta.export.default.js variable.other.readwrite.ts"
-      ],
-      "settings": {
-        "foreground": "#BCBEC4EB",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [
+        "meta.tag.start",
         "entity.name.tag",
         "entity.name.tag.html",
         "punctuation.definition.tag.begin.html",
@@ -1002,6 +1040,7 @@
         "entity.other.attribute-name.attribute.scss",
         "meta.at-rule.each.scss keyword.control.operator",
         "meta.property-list.scss meta.at-rule.extend.scss punctuation.definition.entity.css",
+        "text.html.php.blade meta.tag.other.unrecognized.html.derivative punctuation.definition.tag.end.html",
         "source.vue text.html.derivative meta.template-tag.start entity.name.tag.template.html.vue",
         "source.vue text.html.derivative meta.template-tag.end entity.name.tag.template.html.vue",
         "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
@@ -1047,10 +1086,10 @@
         "meta.decorator entity.name.function",
         "constant.other.character-class.regexp",
         "meta.attribute.php support.attribute.php",
-        "meta.class.php meta.attribute.php support.other.namespace.php",
+        "meta.attribute.php support.other.namespace.php",
+        "meta.attribute.php support.other.namespace.php punctuation.separator.inheritance.php",
         "meta.attribute.php entity.name.attribute.php",
-        "meta.attribute.php support.class.php",
-        "entity.name.decorator.structure.ts"
+        "meta.attribute.php support.class.php"
       ],
       "settings": {
         "foreground": "#B3AE60F2"
@@ -1071,6 +1110,7 @@
         "meta.attribute.php entity.name.variable.parameter.php",
         "meta.embedded.block.php meta.attribute.php support.class.php",
         "entity.other.attribute-name.class.less punctuation.definition.entity.less",
+        "source.vue meta.var.expr.js meta.tag.attributes.js entity.other.attribute-name.html.vue",
         "source.stylus meta.property-value.css meta.function.stylus keyword.other.unit.css",
         "punctuation.definition.interpolation.begin.bracket.curly.scss",
         "punctuation.definition.interpolation.end.bracket.curly.scss",
@@ -1079,6 +1119,7 @@
         "meta.function-call.less keyword.other.unit.less",
         "source.stylus punctuation.definition.entity.css",
         "meta.property-list.css meta.selector.stylus",
+        "source.astro variable.other.object.tsx",
         "storage.modifier.reference.php"
       ],
       "settings": {
@@ -1097,11 +1138,12 @@
     },
     {
       "scope": [
+        "meta.definition.variable.scss",
         "punctuation.separator.key-value.html.vue",
-        "punctuation.definition.string.begin.html.vue",
         "punctuation.definition.string.end.html.vue",
+        "punctuation.definition.string.begin.html.vue",
         "source.stylus support.constant.property-value.css",
-        "meta.definition.variable.scss"
+        "text.html.php.blade invalid.illegal.character-not-allowed-here.html"
       ],
       "settings": {
         "foreground": "#6AAB73EF"
@@ -1122,8 +1164,11 @@
         "meta.tag.js entity.name.tag.js support.class.component.ts",
         "meta.jsx.children.js support.class.component.js",
         "meta.jsx.children.js support.class.component.ts",
+        "source.svelte support.class.component.svelte",
+        "source.astro support.class.component.astro",
         "support.class.component.js.jsx",
         "support.class.component.tsx",
+        "support.class.component.ts",
         "support.class.component.js",
         "selector.number.js",
         "selector.number.ts"
@@ -1135,7 +1180,9 @@
     {
       "scope": [
         "source.ts variable.other.constant.ts",
-        "markup.fenced_code.block.markdown fenced_code.block.language.markdown"
+        "markup.fenced_code.block.markdown fenced_code.block.language.markdown",
+        "source.vue entity.other.attribute-name.html.vue",
+        "text.html entity.other.ng-binding-name"
       ],
       "settings": {
         "foreground": "#C582BAEB"
