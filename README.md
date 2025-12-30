@@ -31,7 +31,7 @@ For a better experience, it is recommended to add the following configuration to
 To further enhance your experience with the **PhpStorm Dark Theme**, we recommend installing the following extensions:
 
 * **Icon Theme**: Enhance the visual consistency of your editor with the [JetBrains Icon Theme](https://marketplace.visualstudio.com/items?itemName=chadalen.vscode-jetbrains-icon-theme), which provides a set of icons inspired by JetBrains.
-* **PHP String Syntax**: Improve your PHP coding experience with [PHP String Syntax](https://marketplace.visualstudio.com/items?itemName=ericgomez.php-string-syntax), which highlights HTML, SQL and JavaScript embedded in PHP strings.
+* **PHP String Syntax**: Improve your PHP coding experience with [PHP String Syntax](https://marketplace.visualstudio.com/items?itemName=ericgomez.php-string-syntax), which highlights HTML/XML, SQL and JavaScript embedded in PHP strings.
 * **JS/TS String Syntax**: Improve your JavaScript and TypeScript coding experience with [JS/TS String Syntax](https://marketplace.visualstudio.com/items?itemName=ericgomez.js-string-syntax), which highlights HTML/XML, SQL and CSS embedded in JavaScript and TypeScript strings (including template literals).
 * **Breakpoint Highlighting**: Make breakpoints stand out more effectively with [Breakpoint Highlight](https://marketplace.visualstudio.com/items?itemName=ericgomez.breakpoint-highlight), improving your debugging workflow.
 

@@ -290,7 +290,7 @@
   },
   "tokenColors": [
     {
-      "name": "Comment",
+      "name": "Comments & Documentation",
       "scope": [
         "comment",
         "source.astro comment.block",
@@ -301,7 +301,7 @@
       }
     },
     {
-      "name": "Block Comments",
+      "name": "Comments - Block Documentation",
       "scope": [
         "comment.block.documentation"
       ],
@@ -311,7 +311,7 @@
       }
     },
     {
-      "name": "Block Comments - type",
+      "name": "Comments - Block Types",
       "scope": [
         "comment.block.documentation storage.type"
       ],
@@ -321,6 +321,7 @@
       }
     },
     {
+      "name": "Comments - CSS/SCSS",
       "scope": [
         "source.css.scss comment"
       ],
@@ -330,6 +331,17 @@
       }
     },
     {
+      "name": "Comments - JSDoc",
+      "scope": [
+        "variable.other.jsdoc",
+        "entity.name.type.instance.jsdoc"
+      ],
+      "settings": {
+        "foreground": "#abadb3"
+      }
+    },
+    {
+      "name": "Global - Keywords & Storage",
       "scope": [
         "keyword",
         "keyword.operator.new",
@@ -338,10 +350,17 @@
         "storage.type",
         "support.type",
         "constant.language",
-        "variable.key.dotenv",
         "entity.name.command",
-        "entity.name.tag.yaml",
-        "constant.character.escape",
+        "constant.character.escape"
+      ],
+      "settings": {
+        "foreground": "#C69179F2",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Markdown - Formatting Marks",
+      "scope": [
         "punctuation.definition.markdown",
         "punctuation.definition.raw.markdown",
         "punctuation.definition.bold.markdown",
@@ -357,55 +376,32 @@
       }
     },
     {
+      "name": "Config & Data - Keys",
       "scope": [
-        "variable.language.this"
-      ],
-      "settings": {
-        "foreground": "#9878A1FD"
-      }
-    },
-    {
-      "scope": [
-        "punctuation.definition.heading.markdown"
+        "variable.key.dotenv",
+        "entity.name.tag.yaml"
       ],
       "settings": {
         "foreground": "#C69179F2",
-        "fontStyle": "italic"
+        "fontStyle": ""
       }
     },
     {
-      "scope": [
-        "markup.heading"
-      ],
-      "settings": {
-        "foreground": "#C582BAEB",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [
-        "keyword.control.at-rule.mixin.scss",
-        "punctuation.definition.variable.less",
-        "support.other.variable.less"
-      ],
-      "settings": {
-        "foreground": "#D0CFFFE5"
-      }
-    },
-    {
+      "name": "Global - Strings",
       "scope": [
         "string",
-        "punctuation.definition.metadata.markdown",
         "markup.inline.raw",
         "markup.quote",
-        "punctuation.separator.key-value.html",
-        "punctuation.separator.key-value.xml",
-        "source.css support.constant",
-        "keyword.other.unit",
         "constant.other.character-class.set.regexp",
-        "constant.other.character-class.range.regexp",
-        "meta.at-rule.each keyword.control.operator",
-        "meta.attribute-selector",
+        "constant.other.character-class.range.regexp"
+      ],
+      "settings": {
+        "foreground": "#6AAB73EF"
+      }
+    },
+    {
+      "name": "EditorConfig - Constants",
+      "scope": [
         "constant.language.lf.editorconfig",
         "constant.language.tab.editorconfig",
         "constant.language.crlf.editorconfig",
@@ -414,7 +410,30 @@
         "constant.language.charset.encoding.utf-8.editorconfig",
         "constant.numeric.decimal.integer.int.editorconfig",
         "constant.language.boolean.false.editorconfig",
-        "constant.language.boolean.off.editorconfig",
+        "constant.language.boolean.off.editorconfig"
+      ],
+      "settings": {
+        "foreground": "#6AAB73EF"
+      }
+    },
+    {
+      "name": "Global - Units & Constants",
+      "scope": [
+        "source.css support.constant",
+        "keyword.other.unit"
+      ],
+      "settings": {
+        "foreground": "#6AAB73EF"
+      }
+    },
+    {
+      "name": "Global - Punctuation (Green)",
+      "scope": [
+        "punctuation.definition.metadata.markdown",
+        "punctuation.separator.key-value.html",
+        "punctuation.separator.key-value.xml",
+        "meta.at-rule.each keyword.control.operator",
+        "meta.attribute-selector",
         "meta.tag.attributes keyword.operator.assignment",
         "keyword.interpolation.begin.dotenv",
         "keyword.interpolation.end.dotenv"
@@ -424,6 +443,7 @@
       }
     },
     {
+      "name": "Global - Numbers & Regex",
       "scope": [
         "constant.numeric",
         "keyword.operator.quantifier.regexp",
@@ -435,18 +455,52 @@
       }
     },
     {
+      "name": "Global - Operators",
       "scope": [
-        "entity.name.type.parameter",
-        "meta.type.parameters entity.name.type",
-        "meta.type.infer entity.name.type",
-        "meta.return.type.ts",
-        "meta.return.type.tsx"
+        "keyword.operator",
+        "keyword.operator.spread",
+        "keyword.generator.asterisk",
+        "keyword.operator.comparison",
+        "keyword.operator.assignment",
+        "keyword.operator.type.annotation",
+        "keyword.operator.arithmetic",
+        "storage.type.function.arrow",
+        "keyword.operator.logical",
+        "keyword.operator.optional",
+        "keyword.operator.increment",
+        "keyword.operator.decrement",
+        "keyword.operator.relational",
+        "keyword.operator.ternary"
       ],
       "settings": {
-        "foreground": "#507874"
+        "foreground": "#BCBEC4EB"
       }
     },
     {
+      "name": "Global - Punctuation",
+      "scope": [
+        "meta.brace.square",
+        "punctuation.separator.key-value",
+        "punctuation.definition.character-class.regexp"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "YAML - Values",
+      "scope": [
+        "string.unquoted.plain.out.yaml",
+        "constant.language.boolean.yaml",
+        "constant.language.null.yaml",
+        "constant.numeric.float.yaml"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "Global - Attributes & Parameters",
       "scope": [
         "support.type.property-name",
         "entity.other.attribute-name",
@@ -460,72 +514,20 @@
       }
     },
     {
+      "name": "Global - Types",
       "scope": [
-        "variable.other.jsdoc",
-        "entity.name.type.instance.jsdoc"
+        "entity.name.type.parameter",
+        "meta.type.parameters entity.name.type",
+        "meta.type.infer entity.name.type",
+        "meta.return.type.ts",
+        "meta.return.type.tsx"
       ],
       "settings": {
-        "foreground": "#abadb3"
+        "foreground": "#507874"
       }
     },
     {
-      "scope": [
-        "string.other.link",
-        "constant.other.reference.link",
-        "punctuation.definition.link.title.begin.markdown",
-        "punctuation.definition.link.title.end.markdown",
-        "punctuation.definition.link.description.begin.markdown",
-        "punctuation.definition.link.description.end.markdown"
-      ],
-      "settings": {
-        "foreground": "#59AAE7EA",
-        "fontStyle": "underline"
-      }
-    },
-    {
-      "scope": [
-        "markup.underline.link"
-      ],
-      "settings": {
-        "foreground": "#59AAE7EA",
-        "fontStyle": "italic"
-      }
-    },
-    {
-      "scope": [
-        "entity.name.function.ts",
-        "constant.other.color.rgb-value",
-        "meta.block.ts entity.name.function.ts",
-        "meta.var.expr.ts entity.name.function.ts",
-        "meta.method.declaration.ts meta.block.ts entity.name.function.ts",
-        "meta.method.declaration.ts meta.definition.method.ts entity.name.function.ts",
-        "meta.field.declaration.ts meta.definition.property.ts entity.name.function.ts",
-        "source.vue meta.function-call.js entity.other.attribute-name.html.vue",
-        "string.other.link.description.title.markdown"
-      ],
-      "settings": {
-        "foreground": "#59AAE7EA"
-      }
-    },
-    {
-      "scope": [
-        "variable.parameter.url.css",
-        "meta.property-value variable.parameter.url",
-        "meta.at-rule.namespace variable.parameter.url"
-      ],
-      "settings": {
-        "foreground": "#5c92ff"
-      }
-    },
-    {
-      "scope": [
-        "variable.scss"
-      ],
-      "settings": {
-        "foreground": "#6d9cbe"
-      }
-    },
-    {
+      "name": "PHP - Core, Control & Keywords",
       "scope": [
         "keyword.control.php",
         "constant.language.php",
@@ -538,13 +540,14 @@
         "punctuation.section.embedded.begin.php",
         "meta.union.type.php punctuation.separator.pipe.php",
         "storage.type.php support.type.php",
-        "keyword.operator.logical.php",
         "storage.type.php",
         "storage.modifier.php",
+        "storage.type.const.php",
         "storage.type.class.php",
         "keyword.control.case.php",
         "keyword.control.break.php",
         "keyword.operator.type.php",
+        "keyword.operator.as.php",
         "storage.type.function.php",
         "keyword.control.switch.php",
         "storage.modifier.extends.php",
@@ -575,6 +578,7 @@
       }
     },
     {
+      "name": "PHP - Variables",
       "scope": [
         "variable.other.php",
         "variable.other.local.php",
@@ -595,10 +599,11 @@
       }
     },
     {
+      "name": "PHP - Constants & Core",
       "scope": [
         "support.constant.std.php",
         "support.constant.ext.php",
-        "meta.embedded.inline.phpx support.constant.core.php",
+        "support.constant.core.php",
         "constant.other.class.php",
         "constant.enum.php"
       ],
@@ -608,9 +613,9 @@
       }
     },
     {
+      "name": "PHP - Functions & Twig",
       "scope": [
-        "meta.function-call.php",
-        "entity.name.function.php",
+        "support.function",
         "support.function.json.php",
         "support.function.math.php",
         "support.function.array.php",
@@ -618,6 +623,8 @@
         "text.html constant.character.entity.named",
         "meta.function-call.other.twig",
         "meta.function-call.twig",
+        "meta.function-call.php",
+        "entity.name.function.php",
         "support.function.twig"
       ],
       "settings": {
@@ -625,19 +632,69 @@
       }
     },
     {
+      "name": "PHP - Operators",
       "scope": [
         "keyword.operator.key.php",
         "keyword.operator.class.php",
         "keyword.operator.ternary.php",
-        "keyword.other.array.phpdoc.php",
-        "punctuation.section.array.end.php",
+        "keyword.operator.logical.php",
         "keyword.operator.return-value.php",
-        "punctuation.section.array.begin.php",
         "keyword.operator.null-coalescing.php",
+        "keyword.operator.increment-decrement.php",
+        "keyword.operator.comparison.php",
+        "keyword.operator.string.php",
+        "keyword.definition.arrow.php"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "PHP - Punctuation",
+      "scope": [
+        "punctuation.section.array.end.php",
+        "punctuation.section.array.begin.php",
+        "punctuation.terminator.expression.php",
+        "punctuation.separator.delimiter.php",
+        "punctuation.definition.arrow.php",
+        "punctuation.definition.storage-type.begin.bracket.round.php",
+        "punctuation.definition.storage-type.end.bracket.round.php",
+        "punctuation.definition.parameters.begin.bracket.round.php",
+        "punctuation.definition.parameters.end.bracket.round.php",
+        "punctuation.definition.arguments.begin.bracket.round.php",
+        "punctuation.definition.arguments.end.bracket.round.php",
+        "punctuation.definition.begin.bracket.round.php",
+        "punctuation.definition.end.bracket.round.php",
+        "punctuation.definition.entity.begin.bracket.square.css",
+        "punctuation.definition.entity.end.bracket.square.css",
+        "punctuation.section.property-list.begin.bracket.curly.css",
+        "punctuation.section.property-list.end.bracket.curly.css",
+        "punctuation.section.function.begin.bracket.round.css",
+        "punctuation.section.function.end.bracket.round.css",
+        "punctuation.separator.list.comma.css",
+        "punctuation.terminator.rule.css",
+        "keyword.other.unit.percentage.css",
+        "entity.other.attribute-name.class.css punctuation.definition.entity.css",
+        "punctuation.section.tag.twig",
+        "punctuation.separator.property.twig",
+        "punctuation.definition.parameters.begin.twig",
+        "punctuation.definition.parameters.end.twig",
+        "punctuation.section.hash.begin.twig",
+        "punctuation.section.hash.end.twig",
+        "punctuation.accessor",
         "meta.use.php support.other.namespace.php",
+        "meta.use.php support.other.namespace.php punctuation.separator.inheritance.php",
+        "meta.other.type.phpdoc.php support.other.namespace.php",
+        "meta.other.type.phpdoc.php support.other.namespace.php punctuation.separator.inheritance.php"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "PHP - Blade & Tags",
+      "scope": [
         "meta.tag.structure entity.name.function.blade",
-        "meta.other.type.phpdoc.php keyword.other.type.php",
-        "meta.class.php meta.class.body.php support.class.php",
         "text.html.php.blade meta.function.echo.blade source.php",
         "text.html.php.blade meta.function.echo.blade constant.other.php",
         "text.html.php.blade meta.embedded.block.blade meta.function-call.php",
@@ -647,39 +704,19 @@
         "text.html.php.blade meta.embedded.block.blade meta.function-call.php entity.name.class.php",
         "text.html.php.blade meta.tag.other.unrecognized.html.derivative punctuation.definition.tag.end.html",
         "text.html.php.blade meta.function.echo.blade support.function.construct.end.blade",
-        "meta.use.php support.other.namespace.php punctuation.separator.inheritance.php",
-        "entity.other.attribute-name.class.css punctuation.definition.entity.css",
         "meta.embedded.inline.phpx punctuation.definition.tag.begin.html",
-        "meta.embedded.inline.phpx punctuation.definition.tag.end.html",
-        "punctuation.definition.storage-type.begin.bracket.round.php",
-        "punctuation.definition.storage-type.end.bracket.round.php",
-        "punctuation.definition.parameters.begin.bracket.round.php",
-        "punctuation.definition.parameters.end.bracket.round.php",
-        "punctuation.definition.arguments.begin.bracket.round.php",
-        "punctuation.definition.arguments.end.bracket.round.php",
-        "punctuation.section.property-list.begin.bracket.curly.css",
-        "punctuation.section.property-list.end.bracket.curly.css",
-        "punctuation.definition.entity.begin.bracket.square.css",
-        "punctuation.definition.entity.end.bracket.square.css",
-        "punctuation.section.function.begin.bracket.round.css",
-        "punctuation.section.function.end.bracket.round.css",
-        "punctuation.definition.begin.bracket.round.php",
-        "punctuation.definition.end.bracket.round.php",
-        "keyword.operator.increment-decrement.php",
-        "punctuation.terminator.expression.php",
-        "punctuation.separator.list.comma.css",
-        "punctuation.separator.delimiter.php",
-        "keyword.other.unit.percentage.css",
-        "punctuation.terminator.rule.css",
-        "keyword.definition.arrow.php",
-        "keyword.operator.string.php",
-        "source.sql.embedded.php",
-        "punctuation.section.tag.twig",
-        "punctuation.separator.property.twig",
-        "punctuation.definition.parameters.begin.twig",
-        "punctuation.definition.parameters.end.twig",
-        "punctuation.section.hash.begin.twig",
-        "punctuation.section.hash.end.twig",
+        "meta.embedded.inline.phpx punctuation.definition.tag.end.html"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "PHP - Type Support & Extras",
+      "scope": [
+        "keyword.other.array.phpdoc.php",
+        "meta.other.type.phpdoc.php keyword.other.type.php",
+        "meta.class.php meta.class.body.php support.class.php",
         "variable.other.twig",
         "source.sql"
       ],
@@ -688,6 +725,7 @@
       }
     },
     {
+      "name": "PHP - Namespaces",
       "scope": [
         "support.other.namespace.php",
         "support.other.namespace.php punctuation.separator.inheritance.php",
@@ -698,13 +736,34 @@
       }
     },
     {
-      "scope": "invalid.deprecated.entity.other.attribute-name.html",
+      "name": "PHP - Attributes & Parameters",
+      "scope": [
+        "punctuation.separator.colon.php",
+        "entity.name.variable.parameter.php"
+      ],
       "settings": {
-        "foreground": "#BABABAE9",
-        "fontStyle": "strikethrough"
+        "foreground": "#567CDAF5"
       }
     },
     {
+      "name": "PHP - Attributes & Decorators",
+      "scope": [
+        "meta.attribute.php",
+        "punctuation.decorator",
+        "meta.decorator entity.name.function",
+        "constant.other.character-class.regexp",
+        "meta.attribute.php support.attribute.php",
+        "meta.attribute.php support.other.namespace.php",
+        "meta.attribute.php support.other.namespace.php punctuation.separator.inheritance.php",
+        "meta.attribute.php entity.name.attribute.php",
+        "meta.attribute.php support.class.php"
+      ],
+      "settings": {
+        "foreground": "#B3AE60F2"
+      }
+    },
+    {
+      "name": "PHP - PHPDoc Keywords",
       "scope": [
         "keyword.other.phpdoc.php"
       ],
@@ -714,6 +773,7 @@
       }
     },
     {
+      "name": "PHP - PHPDoc Text",
       "scope": [
         "comment.block.documentation meta.other.type.phpdoc.php"
       ],
@@ -723,81 +783,101 @@
       }
     },
     {
-      "scope": [
-        "support.function.string.sql",
-        "support.function.mathematical.sql",
-        "support.function.expression.sql",
-        "support.function.aggregate.sql"
-      ],
-      "settings": {
-        "foreground": "#59AAE7EA"
-      }
-    },
-    {
-      "scope": [
-        "constant.other.table-name.sql",
-        "support.type.property-name.json",
-        "variable.other.property.php",
-        "variable.other.property.twig"
-      ],
-      "settings": {
-        "foreground": "#C582BAEB"
-      }
-    },
-    {
+      "name": "JS/TS - Keywords, Flow & Storage",
       "scope": [
         "storage.type.js",
         "storage.type.ts",
+        "storage.type.tsx",
+        "storage.type.js.jsx",
         "keyword.control.from.js",
         "keyword.control.from.ts",
+        "keyword.control.from.tsx",
+        "keyword.control.from.js.jsx",
         "keyword.control.flow.js",
         "keyword.control.flow.ts",
+        "keyword.control.flow.tsx",
+        "keyword.control.flow.js.jsx",
         "keyword.control.loop.js",
         "keyword.control.loop.ts",
+        "keyword.control.loop.tsx",
+        "keyword.control.loop.js.jsx",
         "keyword.operator.new.js",
         "keyword.operator.new.ts",
+        "keyword.operator.new.tsx",
+        "keyword.operator.new.js.jsx",
         "storage.type.function.js",
         "storage.type.function.ts",
+        "storage.type.function.tsx",
+        "storage.type.function.js.jsx",
         "keyword.control.import.js",
         "keyword.control.import.ts",
+        "keyword.control.import.tsx",
+        "keyword.control.import.js.jsx",
         "constant.language.null.js",
         "constant.language.null.ts",
+        "constant.language.null.tsx",
+        "constant.language.null.js.jsx",
         "keyword.control.export.js",
         "keyword.control.export.ts",
+        "keyword.control.export.tsx",
+        "keyword.control.export.js.jsx",
         "storage.modifier.async.js",
         "storage.modifier.async.ts",
+        "storage.modifier.async.tsx",
+        "storage.modifier.async.js.jsx",
         "keyword.control.switch.js",
         "keyword.control.switch.ts",
+        "keyword.control.switch.tsx",
+        "keyword.control.switch.js.jsx",
         "variable.language.this.js",
         "variable.language.this.ts",
+        "variable.language.this.tsx",
+        "variable.language.this.js.jsx",
         "keyword.control.trycatch.js",
         "keyword.control.trycatch.ts",
+        "keyword.control.trycatch.tsx",
+        "keyword.control.trycatch.js.jsx",
         "keyword.generator.asterisk.js",
         "keyword.generator.asterisk.ts",
+        "keyword.generator.asterisk.tsx",
+        "keyword.generator.asterisk.js.jsx",
         "constant.language.undefined.js",
         "constant.language.undefined.ts",
+        "constant.language.undefined.tsx",
+        "constant.language.undefined.js.jsx",
         "keyword.control.conditional.js",
         "keyword.control.conditional.ts",
+        "keyword.control.conditional.tsx",
+        "keyword.control.conditional.js.jsx",
         "constant.language.boolean.true.js",
         "constant.language.boolean.true.ts",
+        "constant.language.boolean.true.tsx",
+        "constant.language.boolean.true.js.jsx",
         "keyword.operator.expression.of.js",
         "keyword.operator.expression.of.ts",
+        "keyword.operator.expression.of.tsx",
+        "keyword.operator.expression.of.js.jsx",
         "keyword.operator.expression.in.js",
         "keyword.operator.expression.in.ts",
+        "keyword.operator.expression.in.tsx",
+        "keyword.operator.expression.in.js.jsx",
         "constant.language.boolean.false.js",
-        "constant.language.boolean.false.ts"
+        "constant.language.boolean.false.ts",
+        "constant.language.boolean.false.tsx",
+        "constant.language.boolean.false.js.jsx"
       ],
       "settings": {
         "foreground": "#C69179F2"
       }
     },
     {
+      "name": "JS/TS - Functions & Components",
       "scope": [
         "entity.name.function.js",
         "entity.name.function.ts",
-        "entity.name.function.jsx",
         "entity.name.function.tsx",
-        "variable.other.object.tsx",
+        "entity.name.function.js.jsx",
+        "constant.character.entity.ts",
         "constant.character.entity.tsx"
       ],
       "settings": {
@@ -805,7 +885,26 @@
       }
     },
     {
+      "name": "JS/TS - Functions (Declarations)",
       "scope": [
+        "entity.name.function.ts",
+        "constant.other.color.rgb-value",
+        "meta.block.ts entity.name.function.ts",
+        "meta.var.expr.ts entity.name.function.ts",
+        "meta.method.declaration.ts meta.block.ts entity.name.function.ts",
+        "meta.method.declaration.ts meta.definition.method.ts entity.name.function.ts",
+        "meta.field.declaration.ts meta.definition.property.ts entity.name.function.ts",
+        "source.vue meta.function-call.js entity.other.attribute-name.html.vue",
+        "string.other.link.description.title.markdown"
+      ],
+      "settings": {
+        "foreground": "#59AAE7EA"
+      }
+    },
+    {
+      "name": "JS/TS/Svelte/Astro - Variables & This",
+      "scope": [
+        "variable.language.this",
         "variable.language.this.ts",
         "entity.name.section.group-title.editorconfig",
         "source.svelte punctuation.definition.keyword.svelte",
@@ -823,20 +922,7 @@
       }
     },
     {
-      "scope": [
-        "variable.other.constant.js",
-        "variable.other.constant.ts",
-        "meta.definition.variable.js",
-        "meta.definition.variable.ts",
-        "meta.object.member meta.function-call variable.other.constant.object",
-        "meta.export.default.ts variable.other.object.ts"
-      ],
-      "settings": {
-        "foreground": "#C582BAEB",
-        "fontStyle": "italic"
-      }
-    },
-    {
+      "name": "JS/TS - Properties",
       "scope": [
         "meta.object-literal.key",
         "support.variable.property",
@@ -846,9 +932,12 @@
         "variable.other.property.js.jsx",
         "variable.other.object.property.js",
         "variable.other.object.property.ts",
-        "variable.other.object.property.jsx",
         "variable.other.object.property.tsx",
         "variable.other.object.property.js.jsx",
+        "variable.other.constant.property.js",
+        "variable.other.constant.property.ts",
+        "variable.other.constant.property.tsx",
+        "variable.other.constant.property.js.jsx",
         "keyword.other.definition.root.editorconfig",
         "keyword.other.definition.custom.editorconfig",
         "keyword.other.definition.charset.editorconfig",
@@ -859,20 +948,13 @@
         "keyword.other.definition.max_line_length.editorconfig",
         "keyword.other.definition.insert_final_newline.editorconfig",
         "keyword.other.definition.trim_trailing_whitespace.editorconfig",
-        "meta.embedded.expression.tsx variable.other.constant.object.tsx",
-        "meta.embedded.expression.tsx variable.other.constant.property.tsx",
         "source.ts.embedded.html.vue variable.other.object.property.ts",
         "meta.method.declaration.js variable.other.property.js",
         "meta.method.declaration.ts variable.other.property.ts",
-        "text.html.embedded.ts variable.other.readwrite.ts",
-        "text.html.embedded.js variable.other.property.js",
-        "text.html.embedded.ts variable.other.property.ts",
-        "string.template.js variable.other.property.js",
-        "string.template.ts variable.other.property.ts",
         "meta.arrow.tsx variable.other.property.tsx",
         "meta.arrow.js variable.other.property.js",
         "meta.arrow.ts variable.other.property.ts",
-        "variable.other.readwrite.alias.ts",
+        "variable.object.property.js.jsx",
         "variable.object.property.tsx",
         "variable.object.property.js",
         "variable.object.property.ts",
@@ -883,109 +965,39 @@
       }
     },
     {
-      "scope": [
-        "meta.brace.square",
-        "keyword.operator",
-        "keyword.operator.spread",
-        "keyword.generator.asterisk",
-        "keyword.operator.comparison",
-        "keyword.operator.assignment",
-        "keyword.operator.type.annotation",
-        "keyword.operator.arithmetic",
-        "storage.type.function.arrow",
-        "keyword.operator.logical",
-        "keyword.operator.optional",
-        "punctuation.separator.key-value",
-        "keyword.operator.increment",
-        "keyword.operator.decrement",
-        "keyword.operator.relational",
-        "keyword.operator.ternary",
-        "string.unquoted.plain.out.yaml",
-        "constant.numeric.float.yaml",
-        "punctuation.definition.character-class.regexp"
-      ],
-      "settings": {
-        "foreground": "#BCBEC4EB"
-      }
-    },
-    {
+      "name": "JS/TS - Punctuation & Braces",
       "scope": [
         "meta.brace.round.js",
         "meta.brace.round.ts",
-        "variable.other.object.js",
-        "variable.other.object.ts",
-        "variable.other.readwrite.js",
-        "variable.other.readwrite.ts",
-        "variable.other.readwrite.tsx",
-        "support.type.object.module.js",
-        "support.type.object.module.ts",
-        "punctuation.separator.comma.js",
-        "punctuation.separator.comma.ts",
-        "variable.other.readwrite.js.jsx",
+        "meta.brace.round.tsx",
+        "meta.brace.round.js.jsx",
+        "punctuation.accessor.js",
+        "punctuation.accessor.ts",
+        "punctuation.accessor.tsx",
+        "punctuation.accessor.js.jsx",
         "punctuation.accessor.optional.js",
         "punctuation.accessor.optional.ts",
-        "variable.other.readwrite.alias.js",
-        "variable.other.readwrite.alias.ts",
-        "source.ts variable.other.object.ts",
-        "constant.language.import-export-all.js",
-        "constant.language.import-export-all.ts",
-        "constant.language.import-export-all.jsx",
-        "constant.language.import-export-all.tsx",
-        "source.js.embedded.php meta.brace.round.js",
-        "source.js.embedded.php meta.brace.round.ts",
-        "source.js.embedded.php meta.jsx.children.js",
-        "source.js.embedded.php meta.jsx.children.ts",
+        "punctuation.accessor.optional.tsx",
+        "punctuation.accessor.optional.js.jsx",
+        "punctuation.separator.comma.js",
+        "punctuation.separator.comma.ts",
+        "punctuation.separator.comma.tsx",
+        "punctuation.separator.comma.js.jsx",
         "punctuation.definition.typeparameters.end.ts",
         "punctuation.definition.typeparameters.begin.ts",
-        "string.template.js variable.other.readwrite.js",
-        "string.template.ts variable.other.readwrite.ts",
-        "meta.function-call.js variable.other.object.js",
-        "meta.function-call.js variable.other.object.ts",
-        "meta.function-call.tsx variable.other.object.tsx",
-        "text.html.embedded.js variable.other.readwrite.js",
+        "punctuation.definition.typeparameters.end.tsx",
+        "punctuation.definition.typeparameters.begin.tsx",
         "punctuation.definition.template-expression.end.js",
         "punctuation.definition.template-expression.end.ts",
+        "punctuation.definition.template-expression.end.tsx",
+        "punctuation.definition.template-expression.end.js.jsx",
         "punctuation.definition.template-expression.begin.js",
         "punctuation.definition.template-expression.begin.ts",
-        "meta.export.default.ts variable.other.readwrite.ts",
-        "source.js.embedded.php punctuation.definition.block.js",
-        "source.js.embedded.php punctuation.definition.block.ts",
-        "meta.method.declaration.ts variable.other.readwrite.ts",
-        "meta.definition.variable.js variable.other.constant.js",
-        "meta.definition.variable.ts variable.other.constant.ts",
-        "source.js.embedded.php punctuation.terminator.statement.js",
-        "source.js.embedded.php punctuation.terminator.statement.ts",
-        "source.js.embedded.php punctuation.definition.parameters.end.js",
-        "source.js.embedded.php punctuation.definition.parameters.end.ts",
-        "source.js.embedded.php punctuation.definition.parameters.begin.js",
-        "source.js.embedded.php punctuation.definition.parameters.begin.ts",
-        "meta.objectliteral.js meta.object.member.js variable.other.object.js",
-        "meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
-        "meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
-        "meta.template.expression.js source.js.embedded.expression meta.brace.round.js",
-        "meta.template.expression.ts source.js.embedded.expression meta.brace.round.ts",
-        "meta.class.ts meta.field.declaration.ts meta.type.annotation.ts entity.name.type.module.ts",
-        "string.template.ts meta.template.expression.ts punctuation.definition.template-expression.begin.ts",
-        "string.template.ts meta.template.expression.ts punctuation.definition.template-expression.end.ts",
-        "meta.method.declaration.ts meta.block.ts new.expr.ts meta.function-call.ts entity.name.function.ts",
-        "variable.other.constant.property variable.other.object.property variable.other.property variable.other.object entity.name.constant entity.name.type.module",
-        "text.html.embedded.php punctuation.section.property-list.begin.bracket.curly.css",
-        "text.html.embedded.php punctuation.section.property-list.end.bracket.curly.css",
+        "punctuation.definition.template-expression.begin.tsx",
+        "punctuation.definition.template-expression.begin.js.jsx",
         "punctuation.definition.brace.bracket.curly.begin.editorconfig",
         "punctuation.definition.brace.bracket.curly.end.editorconfig",
-        "string.template.js variable.other.constant.property.js",
-        "string.template.ts variable.other.constant.property.ts",
-        "punctuation.definition.template-expression.begin.tsx",
-        "punctuation.definition.template-expression.end.tsx",
         "punctuation.separator.delimiter.comma.editorconfig",
-        "string.quoted.double.php text.html.embedded.php",
-        "string.quoted.single.php text.html.embedded.php",
-        "punctuation.definition.begin.bracket.curly.php",
-        "punctuation.definition.end.bracket.curly.php",
-        "string.quoted.double.js text.html.embedded.js",
-        "string.quoted.single.js text.html.embedded.js",
-        "string.quoted.double.js text.xml.embedded.js",
-        "string.quoted.single.js text.xml.embedded.js",
         "punctuation.definition.parameters.begin.js.jsx",
         "punctuation.definition.parameters.end.js.jsx",
         "punctuation.definition.parameters.begin.tsx",
@@ -994,83 +1006,96 @@
         "punctuation.definition.parameters.end.js",
         "punctuation.definition.parameters.end.ts",
         "punctuation.definition.parameters.end.tsx",
-        "string.template.js punctuation.accessor.js",
-        "string.template.js text.html.embedded.js",
-        "string.template.js text.xml.embedded.js",
         "punctuation.separator.parameter.js.jsx",
         "punctuation.separator.parameter.tsx",
         "punctuation.separator.parameter.js",
         "punctuation.separator.parameter.ts",
-        "punctuation.accessor.optional.tsx",
-        "punctuation.separator.comma.tsx",
-        "punctuation.accessor.js.jsx",
-        "punctuation.accessor.tsx",
+        "string.template text.xml.embedded",
+        "string.template text.html.embedded",
+        "string.template source.sql.embedded",
+        "string.template source.css.embedded",
+        "string.quoted text.xml.embedded",
+        "string.quoted text.html.embedded",
+        "string.quoted source.sql.embedded",
+        "string.quoted source.css.embedded",
+        "string.quoted source.js.embedded",
         "selector.operator.js",
         "selector.operator.ts",
-        "entity.name.type.tsx",
-        "meta.brace.round.tsx",
-        "meta.brace.round.ts",
-        "entity.name.type.ts",
-        "support.type.ts",
-        "support.type.tsx"
+        "punctuation.definition.begin.bracket.curly.php",
+        "punctuation.definition.end.bracket.curly.php"
       ],
       "settings": {
-        "foreground": "#BCBEC4EB",
-        "fontStyle": ""
+        "foreground": "#BCBEC4EB"
       }
     },
     {
+      "name": "JS/TS - Variables (ReadWrite/Object)",
       "scope": [
-        "meta.tag.start",
-        "entity.name.tag",
-        "entity.name.tag.html",
-        "punctuation.definition.tag.begin.html",
-        "punctuation.definition.tag.end.html",
-        "variable.parameter.misc.css",
-        "variable.parameter.keyframe-list.css",
-        "entity.other.attribute-name.id",
-        "entity.other.attribute-name.id punctuation.definition.entity",
-        "entity.other.attribute-name.class",
-        "entity.other.attribute-name.pseudo-class",
-        "entity.other.attribute-name.pseudo-element",
-        "entity.other.attribute-name.scss",
-        "entity.other.attribute-name.css",
-        "variable.parameter.tailwind.tailwind",
-        "variable.parameter.layer.tailwind",
-        "entity.other.attribute-name.attribute.scss",
-        "meta.at-rule.each.scss keyword.control.operator",
-        "meta.property-list.scss meta.at-rule.extend.scss punctuation.definition.entity.css",
-        "text.html.php.blade meta.tag.other.unrecognized.html.derivative punctuation.definition.tag.end.html",
-        "source.vue text.html.derivative meta.template-tag.start entity.name.tag.template.html.vue",
-        "source.vue text.html.derivative meta.template-tag.end entity.name.tag.template.html.vue",
-        "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
-        "entity.other.attribute-name.parent-selector-suffix.stylus",
-        "entity.other.attribute-name.placeholder.css",
-        "entity.other.attribute-name.placeholder.css punctuation.definition.entity",
-        "meta.property-list.less entity.other.attribute-name.parent.less",
-        "meta.property-list.less punctuation.definition.entity.less",
-        "entity.other.keyframe-offset",
-        "punctuation.definition.tag",
-        "storage.type.annotation",
-        "meta.at-rule.media keyword.operator",
-        "meta.at-rule.media keyword.control.operator",
-        "meta.attribute-selector string.unquoted.attribute-value",
-        "meta.property-value variable.argument.css",
-        "constant.other.scss",
-        "support.constant.parity.css",
-        "source.css entity.name.function",
-        "source.css support.type.map.key",
-        "source.css support.constant.language-range",
-        "support.function.gradient.css",
-        "source.css support.function",
-        "support.function.misc.css",
-        "meta.selector.stylus"
+        "support.type.object.module.js",
+        "support.type.object.module.ts",
+        "support.type.object.module.tsx",
+        "support.type.object.module.js.jsx",
+        "variable.other.object.js",
+        "variable.other.object.ts",
+        "variable.other.object.tsx",
+        "variable.other.object.js.jsx",
+        "variable.other.constant.js",
+        "variable.other.constant.ts",
+        "variable.other.constant.tsx",
+        "variable.other.constant.js.jsx",
+        "variable.other.constant.object.js",
+        "variable.other.constant.object.ts",
+        "variable.other.constant.object.tsx",
+        "variable.other.constant.object.js.jsx",
+        "variable.other.readwrite.js",
+        "variable.other.readwrite.ts",
+        "variable.other.readwrite.tsx",
+        "variable.other.readwrite.js.jsx",
+        "variable.other.readwrite.alias.js",
+        "variable.other.readwrite.alias.ts",
+        "variable.other.readwrite.alias.tsx",
+        "variable.other.readwrite.alias.js.jsx",
+        "meta.export.default.ts variable.other.readwrite.ts",
+        "meta.export.default.tsx variable.other.readwrite.tsx",
+        "meta.method.declaration.ts variable.other.readwrite.ts",
+        "meta.method.declaration.tsx variable.other.readwrite.tsx",
+        "meta.objectliteral.js meta.object.member.js variable.other.object.js",
+        "meta.objectliteral.ts meta.object.member.ts variable.other.object.ts",
+        "meta.objectliteral.tsx meta.object.member.tsx variable.other.object.tsx",
+        "meta.objectliteral.js.jsx meta.object.member.js variable.other.object.js.jsx"
       ],
       "settings": {
-        "foreground": "#D2B982EB"
+        "foreground": "#BCBEC4EB"
       }
     },
     {
+      "name": "TS - Type Definitions",
+      "scope": [
+        "support.type.ts",
+        "support.type.tsx",
+        "entity.name.type.tsx",
+        "entity.name.type.ts",
+        "entity.name.type.module.ts",
+        "entity.name.type.module.tsx"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "JS/TS - Import/Export Constants",
+      "scope": [
+        "constant.language.import-export-all.js",
+        "constant.language.import-export-all.ts",
+        "constant.language.import-export-all.tsx",
+        "constant.language.import-export-all.js.jsx"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "JS/TS - Selectors",
       "scope": [
         "selector.text.js",
         "selector.text.ts"
@@ -1080,46 +1105,203 @@
       }
     },
     {
+      "name": "CSS/SCSS - Variables",
       "scope": [
-        "meta.attribute.php",
-        "punctuation.decorator",
-        "meta.decorator entity.name.function",
-        "constant.other.character-class.regexp",
-        "meta.attribute.php support.attribute.php",
-        "meta.attribute.php support.other.namespace.php",
-        "meta.attribute.php support.other.namespace.php punctuation.separator.inheritance.php",
-        "meta.attribute.php entity.name.attribute.php",
-        "meta.attribute.php support.class.php"
+        "variable.scss",
+        "meta.definition.variable.scss",
+        "source.stylus support.constant.property-value.css"
       ],
       "settings": {
-        "foreground": "#B3AE60F2"
+        "foreground": "#6d9cbe"
       }
     },
     {
+      "name": "CSS - Variables & Parameters",
+      "scope": [
+        "variable.parameter.url.css",
+        "meta.property-value variable.parameter.url",
+        "meta.at-rule.namespace variable.parameter.url"
+      ],
+      "settings": {
+        "foreground": "#5c92ff"
+      }
+    },
+    {
+      "name": "CSS - Mixins & Control",
+      "scope": [
+        "keyword.control.at-rule.mixin.scss",
+        "punctuation.definition.variable.less",
+        "support.other.variable.less"
+      ],
+      "settings": {
+        "foreground": "#D0CFFFE5"
+      }
+    },
+    {
+      "name": "CSS - Tags",
+      "scope": [
+        "meta.tag.start",
+        "entity.name.tag",
+        "entity.name.tag.html",
+        "punctuation.definition.tag.begin.html",
+        "punctuation.definition.tag.end.html",
+        "punctuation.definition.tag",
+        "source.vue text.html.derivative meta.template-tag.start entity.name.tag.template.html.vue",
+        "source.vue text.html.derivative meta.template-tag.end entity.name.tag.template.html.vue",
+        "text.html.php.blade meta.tag.other.unrecognized.html.derivative punctuation.definition.tag.end.html"
+      ],
+      "settings": {
+        "foreground": "#D2B982EB"
+      }
+    },
+    {
+      "name": "CSS - Classes, IDs & Attributes",
+      "scope": [
+        "entity.other.attribute-name.id",
+        "entity.other.attribute-name.id punctuation.definition.entity",
+        "entity.other.attribute-name.class",
+        "entity.other.attribute-name.pseudo-class",
+        "entity.other.attribute-name.pseudo-element",
+        "entity.other.attribute-name.scss",
+        "entity.other.attribute-name.css",
+        "entity.other.attribute-name.attribute.scss",
+        "entity.other.attribute-name.parent-selector-suffix punctuation.definition.entity",
+        "entity.other.attribute-name.parent-selector-suffix.stylus",
+        "entity.other.attribute-name.placeholder.css",
+        "entity.other.attribute-name.placeholder.css punctuation.definition.entity",
+        "meta.property-list.less entity.other.attribute-name.parent.less",
+        "meta.property-list.less punctuation.definition.entity.less",
+        "variable.parameter.misc.css",
+        "variable.parameter.keyframe-list.css",
+        "variable.parameter.tailwind.tailwind",
+        "variable.parameter.layer.tailwind",
+        "meta.attribute-selector string.unquoted.attribute-value",
+        "meta.property-value variable.argument.css",
+        "meta.selector.stylus"
+      ],
+      "settings": {
+        "foreground": "#D2B982EB"
+      }
+    },
+    {
+      "name": "CSS - Support & Functions",
+      "scope": [
+        "source.css entity.name.function",
+        "source.css support.type.map.key",
+        "source.css support.constant.language-range",
+        "support.function.gradient.css",
+        "source.css support.function",
+        "support.function.misc.css",
+        "constant.other.scss",
+        "support.constant.parity.css",
+        "meta.at-rule.each.scss keyword.control.operator",
+        "meta.property-list.scss meta.at-rule.extend.scss punctuation.definition.entity.css",
+        "entity.other.keyframe-offset",
+        "storage.type.annotation",
+        "meta.at-rule.media keyword.operator",
+        "meta.at-rule.media keyword.control.operator"
+      ],
+      "settings": {
+        "foreground": "#D2B982EB"
+      }
+    },
+    {
+      "name": "CSS - Important",
+      "scope": [
+        "keyword.other.important.css"
+      ],
+      "settings": {
+        "foreground": "#be8767",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Markdown - Headings",
+      "scope": [
+        "markup.heading"
+      ],
+      "settings": {
+        "foreground": "#C582BAEB",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown - Headings Punctuation",
+      "scope": [
+        "punctuation.definition.heading.markdown"
+      ],
+      "settings": {
+        "foreground": "#C69179F2",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Markdown - Links",
+      "scope": [
+        "string.other.link",
+        "constant.other.reference.link",
+        "punctuation.definition.link.title.begin.markdown",
+        "punctuation.definition.link.title.end.markdown",
+        "punctuation.definition.link.description.begin.markdown",
+        "punctuation.definition.link.description.end.markdown"
+      ],
+      "settings": {
+        "foreground": "#59AAE7EA",
+        "fontStyle": "underline"
+      }
+    },
+    {
+      "name": "Markdown - Link Text",
+      "scope": [
+        "markup.underline.link"
+      ],
+      "settings": {
+        "foreground": "#59AAE7EA",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "SQL - Functions",
+      "scope": [
+        "support.function.string.sql",
+        "support.function.mathematical.sql",
+        "support.function.expression.sql",
+        "support.function.aggregate.sql"
+      ],
+      "settings": {
+        "foreground": "#59AAE7EA"
+      }
+    },
+    {
+      "name": "SQL & Data - Tables & Properties",
+      "scope": [
+        "constant.other.table-name.sql",
+        "support.type.property-name.json",
+        "variable.other.property.php",
+        "variable.other.property.php punctuation.definition.variable.php",
+        "variable.other.property.twig"
+      ],
+      "settings": {
+        "foreground": "#C582BAEB"
+      }
+    },
+    {
+      "name": "Vue - Keywords & Control",
       "scope": [
         "keyword.control.loop.vue",
         "keyword.control.conditional.vue",
         "punctuation.separator.key-value.html.vue",
-        "source.vue variable.other.readwrite.js",
-        "source.vue variable.other.readwrite.ts",
-        "source.vue variable.other.constant.js",
-        "source.vue variable.other.constant.ts",
-        "source.vue variable.other.object.ts",
-        "source.vue variable.other.readwrite.alias.js",
-        "source.vue variable.other.readwrite.alias.ts",
-        "meta.attribute.php entity.name.variable.parameter.php",
+        "punctuation.definition.string.end.html.vue",
+        "punctuation.definition.string.begin.html.vue"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "PHP & Data - Attributes & Parameters (Additions)",
+      "scope": [
         "meta.embedded.block.php meta.attribute.php support.class.php",
-        "entity.other.attribute-name.class.less punctuation.definition.entity.less",
-        "source.vue meta.var.expr.js meta.tag.attributes.js entity.other.attribute-name.html.vue",
-        "source.stylus meta.property-value.css meta.function.stylus keyword.other.unit.css",
-        "punctuation.definition.interpolation.begin.bracket.curly.scss",
-        "punctuation.definition.interpolation.end.bracket.curly.scss",
-        "meta.function-call.less punctuation.definition.entity.less",
-        "meta.property-list.scss punctuation.definition.entity.css",
-        "meta.function-call.less keyword.other.unit.less",
-        "source.stylus punctuation.definition.entity.css",
-        "meta.property-list.css meta.selector.stylus",
-        "source.astro variable.other.object.tsx",
         "storage.modifier.reference.php"
       ],
       "settings": {
@@ -1127,22 +1309,42 @@
       }
     },
     {
+      "name": "CSS/Less/Stylus - Keywords, Properties & Units",
       "scope": [
-        "punctuation.separator.colon.php",
-        "entity.name.variable.parameter.php",
-        "meta.attribute.php entity.name.variable.parameter.php"
+        "entity.other.attribute-name.class.less punctuation.definition.entity.less",
+        "source.stylus meta.property-value.css meta.function.stylus keyword.other.unit.css",
+        "punctuation.definition.interpolation.begin.bracket.curly.scss",
+        "punctuation.definition.interpolation.end.bracket.curly.scss",
+        "meta.function-call.less punctuation.definition.entity.less",
+        "meta.property-list.scss punctuation.definition.entity.css",
+        "meta.function-call.less keyword.other.unit.less",
+        "source.stylus punctuation.definition.entity.css",
+        "meta.property-list.css meta.selector.stylus"
       ],
       "settings": {
-        "foreground": "#567CDAF5"
+        "foreground": "#BCBEC4EB"
       }
     },
     {
+      "name": "Vue/Astro - Variables & Properties (Components)",
       "scope": [
-        "meta.definition.variable.scss",
-        "punctuation.separator.key-value.html.vue",
-        "punctuation.definition.string.end.html.vue",
-        "punctuation.definition.string.begin.html.vue",
-        "source.stylus support.constant.property-value.css",
+        "source.vue variable.other.readwrite.js",
+        "source.vue variable.other.readwrite.ts",
+        "source.vue variable.other.constant.js",
+        "source.vue variable.other.constant.ts",
+        "source.vue variable.other.object.ts",
+        "source.vue variable.other.readwrite.alias.js",
+        "source.vue variable.other.readwrite.alias.ts",
+        "source.vue meta.var.expr.js meta.tag.attributes.js entity.other.attribute-name.html.vue",
+        "source.astro variable.other.object.tsx"
+      ],
+      "settings": {
+        "foreground": "#BCBEC4EB"
+      }
+    },
+    {
+      "name": "Misc - Definitions & Invalid",
+      "scope": [
         "text.html.php.blade invalid.illegal.character-not-allowed-here.html"
       ],
       "settings": {
@@ -1150,6 +1352,7 @@
       }
     },
     {
+      "name": "Frameworks - Tags",
       "scope": [
         "entity.name.tag.style.html.vue",
         "entity.name.tag.script.html.vue",
@@ -1159,7 +1362,15 @@
         "source.vue text.html.derivative meta.tag.structure.slot.start.html entity.name.tag.html",
         "source.vue text.html.derivative meta.tag.structure.slot.end.html entity.name.tag.html",
         "source.vue text.html.derivative meta.tag.custom.start.html entity.name.tag.html",
-        "source.vue text.html.derivative meta.tag.custom.end.html entity.name.tag.html",
+        "source.vue text.html.derivative meta.tag.custom.end.html entity.name.tag.html"
+      ],
+      "settings": {
+        "foreground": "#29B9A0EE"
+      }
+    },
+    {
+      "name": "Frameworks - Components",
+      "scope": [
         "meta.tag.js entity.name.tag.js support.class.component.js",
         "meta.tag.js entity.name.tag.js support.class.component.ts",
         "meta.jsx.children.js support.class.component.js",
@@ -1178,8 +1389,8 @@
       }
     },
     {
+      "name": "Misc - Special Variables & Code",
       "scope": [
-        "source.ts variable.other.constant.ts",
         "markup.fenced_code.block.markdown fenced_code.block.language.markdown",
         "source.vue entity.other.attribute-name.html.vue",
         "text.html entity.other.ng-binding-name"
@@ -1189,15 +1400,15 @@
       }
     },
     {
-      "scope": [
-        "keyword.other.important.css"
-      ],
+      "name": "Invalid & Deprecated",
+      "scope": "invalid.deprecated.entity.other.attribute-name.html",
       "settings": {
-        "foreground": "#be8767",
-        "fontStyle": "bold"
+        "foreground": "#BABABAE9",
+        "fontStyle": "strikethrough"
       }
     },
     {
+      "name": "Invalid",
       "scope": [
         "invalid"
       ],
@@ -1206,6 +1417,7 @@
       }
     },
     {
+      "name": "Style - Italic",
       "scope": [
         "markup.italic"
       ],
@@ -1214,6 +1426,7 @@
       }
     },
     {
+      "name": "Style - Bold",
       "scope": [
         "markup.bold"
       ],
@@ -1222,6 +1435,7 @@
       }
     },
     {
+      "name": "Style - Strikethrough",
       "scope": [
         "markup.strikethrough"
       ],
