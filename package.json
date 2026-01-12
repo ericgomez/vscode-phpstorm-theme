@@ -8,7 +8,7 @@
     "color": "#1e1f22",
     "theme": "dark"
   },
-  "version": "1.0.14",
+  "version": "1.0.17",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -29,9 +29,14 @@
     },
     "themes": [
       {
-        "label": "PhpStorm Dark Theme",
+        "label": "PhpStorm Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-theme.json"
+      },
+      {
+        "label": "PhpStorm Dark Islands",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-theme-islands.json"
       }
     ]
   },
